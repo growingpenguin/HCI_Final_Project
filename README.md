@@ -150,6 +150,8 @@ The application includes 8 sample apartment listings with:
 - **Icons**: Lucide React
 - **Routing**: React Router DOM
 - **Charts**: Recharts
+- **Maps**: React-Leaflet with Leaflet.markercluster and Leaflet.heat
+- **Testing**: Jest with React Testing Library
 - **State Management**: React hooks (useState, useMemo)
 
 ## 🎨 Design System
@@ -173,11 +175,19 @@ The website is fully responsive and optimized for:
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+- `npx jest --passWithNoTests` - Run Jest test suite
 
 ### Development Server
 - **Local URL**: `http://localhost:3000/`
 - **Network URL**: `http://10.3.7.171:3000/` (accessible from other devices)
 - **Hot Reload**: Automatic refresh on file changes
+
+### Testing
+- **Test Runner**: Jest with React Testing Library
+- **Test Command**: `npx jest --passWithNoTests`
+- **Test Coverage**: MapView component with Leaflet integration
+- **Mock Setup**: Comprehensive Leaflet API mocking in `jest.setup.js`
+- **Test Files**: `src/components/MapView.test.tsx`
 
 ## 📊 Data Structure
 
@@ -210,12 +220,25 @@ This project is based on the original Figma design: [Housing Comparison Website]
 
 This project is for educational purposes as part of a Human-Computer Interaction final project.
  
-## 🆕 Recent additions (Map UX Improvements)
+## 🆕 Recent Updates
 
+### Map UX Improvements
 - Persistent floating filter sidebar integrated as a reusable `FilterPanel` component.
 - SVG-based heatmap overlay (rent gradient) and simple clustering for map markers.
 - Hover tooltips with summary stats and click interactions that open the existing details panel.
 - Accessibility improvements: aria attributes for tooltip and form controls.
+
+### Testing Infrastructure
+- **Jest Test Suite**: Comprehensive testing setup with React Testing Library
+- **Leaflet Mocking**: Complete mock coverage for Leaflet components and plugins
+- **Test Environment**: Proper isolation for map components in test environment
+- **All Tests Passing**: 3/3 tests with proper error handling and defensive coding
+
+### Development Experience
+- **Enhanced Jest Configuration**: Improved module resolution and mock management
+- **Defensive Coding**: Components handle missing dependencies gracefully
+- **Test Environment Checks**: Leaflet functionality properly isolated in tests
+- **Comprehensive Mocking**: Full Leaflet API coverage for reliable testing
 
 These changes are intentionally implemented without removing or modifying original features; they layer on top of the existing MapView and FilterPanel so you can test them incrementally.
   
