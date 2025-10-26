@@ -29,16 +29,23 @@
             "@radix-ui/react-toggle": "^1.1.2",
             "@radix-ui/react-toggle-group": "^1.1.2",
             "@radix-ui/react-tooltip": "^1.1.8",
+            "@turf/area": "^7.2.0",
+            "@turf/helpers": "^7.2.0",
+            "@turf/line-to-polygon": "^7.2.0",
+            "@turf/union": "^7.2.0",
             "class-variance-authority": "^0.7.1",
             "clsx": "*",
             "cmdk": "^1.1.1",
             "embla-carousel-react": "^8.6.0",
             "input-otp": "^1.4.2",
+            "jsts": "^2.12.1",
             "leaflet": "^1.9.4",
             "leaflet.heat": "^0.2.0",
             "leaflet.markercluster": "^1.5.3",
             "lucide-react": "^0.487.0",
             "next-themes": "^0.4.6",
+            "proj4": "^2.19.10",
+            "proj4leaflet": "^1.0.2",
             "react": "^18.3.1",
             "react-day-picker": "^8.10.1",
             "react-dom": "^18.3.1",
@@ -69,15 +76,21 @@
       "jest": {
             "preset": "ts-jest",
             "testEnvironment": "jsdom",
-            "setupFilesAfterEnv": ["@testing-library/jest-dom", "<rootDir>/jest.setup.js"],
+            "setupFilesAfterEnv": [
+                  "@testing-library/jest-dom",
+                  "<rootDir>/jest.setup.js"
+            ],
             "transformIgnorePatterns": [
-              "/node_modules/(?!react-leaflet|leaflet|@react-leaflet|@radix-ui|lucide-react|embla-carousel-react|cmdk|react-day-picker|class-variance-authority|react-hook-form|input-otp|sonner|vaul)/"
+                  "/node_modules/(?!react-leaflet|leaflet|@react-leaflet|@radix-ui|lucide-react|embla-carousel-react|cmdk|react-day-picker|class-variance-authority|react-hook-form|input-otp|sonner|vaul)/"
             ],
             "moduleNameMapper": {
-              "leaflet/dist/leaflet.css$": "<rootDir>/__mocks__/styleMock.js",
-              "\\\\.(css|less|scss|sass)$": "identity-obj-proxy"
+                  "leaflet/dist/leaflet.css$": "<rootDir>/__mocks__/styleMock.js",
+                  "\\\\.(css|less|scss|sass)$": "identity-obj-proxy"
             },
-            "moduleDirectories": ["node_modules", "<rootDir>"],
+            "moduleDirectories": [
+                  "node_modules",
+                  "<rootDir>"
+            ],
             "clearMocks": true,
             "resetMocks": true
       },
