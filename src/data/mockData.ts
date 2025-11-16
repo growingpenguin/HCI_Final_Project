@@ -25,11167 +25,1857 @@ export interface Apartment {
 
 export const apartments: Apartment[] = [
   {
-    id: 1,
-    name: "Sachem A - 2 Bd Field Duplex*",
-    rent: 1320,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 24,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 2,
-    name: "Sachem Unit - 2 Bed Field Duplex RENO",
-    rent: 1600,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 3,
-    name: "Sachem B - 3 Bd Field Duplex*",
-    rent: 1430,
-    distance: 0.30,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 30,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 4,
-    name: "Sachem Unit - 3 Bed Field Duplex RENO",
-    rent: 1730,
-    distance: 0.30,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 5,
-    name: "Sachem C - 1Bd HA RENO",
-    rent: 1720,
-    distance: 0.30,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 6,
-    name: "Sachem D - 1 Bd HA (Ext)",
-    rent: 1650,
-    distance: 0.30,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 7,
-    name: "Sachem E - 2 Bd/1bth (int) 1072",
-    rent: 2250,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 102,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 8,
-    name: "Sachem F - 2 Bd/1bth (ext C M) 1072",
-    rent: 2285,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 102,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 9,
-    name: "Sachem G - 2 Bd/1bth (ext D M) 1025",
-    rent: 2185,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 60,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 10,
-    name: "Sachem H - 2 Bd/1bth (int) 1025",
-    rent: 2150,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 60,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 11,
-    name: "Sachem I - 3 Bd/1.5 bth 1380",
-    rent: 3175,
-    distance: 0.30,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 42,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 12,
-    name: "Sachem J - 1 Bd/ 1 Ba  720",
-    rent: 1775,
-    distance: 0.30,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 66,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 13,
-    name: "Sachem K - 2 Bd / 1 Ba (HA)  832",
-    rent: 1870,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 24,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 14,
-    name: "Sachem L - 2 Bd / 1.5 Ba   938",
-    rent: 2100,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 30,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 15,
-    name: "Sachem M - 2 Bd/ 1.5 Ba (int)  1026",
-    rent: 2230,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 42,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 16,
-    name: "Sachem N - 2 Bd/ 2.5 Ba  1024",
-    rent: 2315,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 18,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 17,
-    name: "Sachem O - 2 Bd / 2.5 Ba  1250",
-    rent: 2825,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1250,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 18,
-    name: "Sachem P - 2 Bd/ 1.5 Ba   1032",
-    rent: 2230,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1032,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 19,
-    name: "Sachem Q - 3 Bd/2bath  1222",
-    rent: 3075,
-    distance: 0.30,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 42,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 20,
-    name: "Sachem R - NS 2 bd/1 bath  603",
-    rent: 1485,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 36,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 21,
-    name: "Sachem Unit - NS 2 bd/1 bath  603 RENO",
-    rent: 1695,
-    distance: 0.30,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703400, lng: -72.287700 },
-    image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
-    neighborhood: "On Campus",
-    studentCount: 36,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 22,
-    name: "1 Austin Ave",
-    rent: 2109,
-    distance: 0.44,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1114,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685502, lng: -72.309643 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 23,
-    name: "1 N. Park St - 1N",
-    rent: 2185,
-    distance: 0.80,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 679,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.697254, lng: -72.325116 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 24,
-    name: "1 N. Park St - 1S",
-    rent: 1276,
-    distance: 3.73,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 658,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.708400, lng: -72.270218 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 25,
-    name: "1 N. Park St - 2N",
-    rent: 1659,
-    distance: 2.86,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 512,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685755, lng: -72.257956 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 26,
-    name: "1 N. Park St -2S",
-    rent: 2229,
-    distance: 2.24,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 616,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.675938, lng: -72.250923 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 27,
-    name: "1 N. Park St Apt 5",
-    rent: 1009,
-    distance: 2.47,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 747,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.692218, lng: -72.299984 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 28,
-    name: "1 S. Park St-Apt A",
-    rent: 2452,
-    distance: 4.46,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 722,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.706398, lng: -72.249651 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 29,
-    name: "1 S. Park St-Apt B",
-    rent: 961,
-    distance: 1.97,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 982,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.713791, lng: -72.256664 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 30,
-    name: "1 S. Park St-Apt C",
-    rent: 1982,
-    distance: 4.32,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 798,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.667166, lng: -72.309268 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 31,
-    name: "1 S. Park St-Apt D",
-    rent: 963,
-    distance: 5.24,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 819,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.693910, lng: -72.291227 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 32,
-    name: "1 S. Park St -Apt E",
-    rent: 1133,
-    distance: 2.33,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 889,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.717114, lng: -72.271354 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 33,
-    name: "1 Sanborn Rd Apt 1",
-    rent: 2047,
-    distance: 3.34,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1175,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.683085, lng: -72.290519 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 34,
-    name: "1 Sanborn Rd Apt 2",
-    rent: 2110,
-    distance: 1.55,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 685,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.689443, lng: -72.266035 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 1,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 35,
-    name: "1 Sanborn Rd Apt 3",
-    rent: 1269,
-    distance: 4.89,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 416,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.695593, lng: -72.322205 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 36,
-    name: "1 Sanborn Rd Apt 4",
-    rent: 2594,
-    distance: 1.51,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 561,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703439, lng: -72.256725 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 37,
-    name: "1 South St (Apts 204) - VP",
-    rent: 1092,
-    distance: 1.10,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 835,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.723099, lng: -72.284382 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 38,
-    name: "1 South St (Apts 206) - VP",
-    rent: 1677,
-    distance: 2.58,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 998,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.681046, lng: -72.247697 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 39,
-    name: "1 South St (Apts 207) - VP",
-    rent: 1810,
-    distance: 4.61,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 746,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.732388, lng: -72.315273 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 40,
-    name: "1 South St (Apts 205) - VP",
-    rent: 2422,
-    distance: 3.70,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 616,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.694281, lng: -72.279829 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 41,
-    name: "1 South St (Apts 208) - VP",
-    rent: 1883,
-    distance: 5.84,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 528,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.732362, lng: -72.326582 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 1,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 42,
-    name: "1 South St (Apts 209) - VP",
-    rent: 2196,
-    distance: 4.58,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 674,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.724988, lng: -72.300286 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 43,
-    name: "1 South St (Apts 210) - VP",
-    rent: 1690,
-    distance: 2.89,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 480,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.739805, lng: -72.257432 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 44,
-    name: "1 South St (Apts 211) - VP",
-    rent: 1825,
-    distance: 3.19,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 491,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.672013, lng: -72.277476 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 45,
-    name: "1 South St Apt 201",
-    rent: 2047,
-    distance: 1.17,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 501,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.724501, lng: -72.284350 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 46,
-    name: "1 South St Apt 202",
-    rent: 801,
-    distance: 2.15,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1006,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.665058, lng: -72.253172 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 47,
-    name: "1 South St Apt 203",
-    rent: 1290,
-    distance: 1.67,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 729,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.708889, lng: -72.321199 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 48,
-    name: "1 South St Apt 301",
-    rent: 2471,
-    distance: 5.87,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 435,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.706116, lng: -72.317439 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 49,
-    name: "1 South St Apt 302",
-    rent: 1925,
-    distance: 1.81,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 784,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.733295, lng: -72.293649 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 50,
-    name: "1 South St Apt 303",
-    rent: 1904,
-    distance: 4.46,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1086,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.679592, lng: -72.302563 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 51,
-    name: "1 South St Apt 304",
-    rent: 1697,
-    distance: 2.87,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 964,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.683332, lng: -72.322378 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 52,
-    name: "1 South St Apt 305",
-    rent: 2004,
-    distance: 1.61,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.681117, lng: -72.321821 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 1,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 53,
-    name: "1 South St Apt 306",
-    rent: 1268,
-    distance: 5.46,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 734,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.732271, lng: -72.321831 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 54,
-    name: "1 South St Apt 307",
-    rent: 1370,
-    distance: 3.07,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1042,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.706639, lng: -72.269632 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 55,
-    name: "1 South St Apt 308",
-    rent: 1980,
-    distance: 1.69,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 642,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.701338, lng: -72.294935 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 1,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 56,
-    name: "1 South St Apt 309",
-    rent: 998,
-    distance: 2.32,
-    bedrooms: 0,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 1441,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.696388, lng: -72.258393 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 0,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 57,
-    name: "1 South St Apt 310",
-    rent: 2179,
-    distance: 0.65,
-    bedrooms: 0,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 1100,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.721757, lng: -72.263453 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 0,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 58,
-    name: "1 South St Apt 311",
-    rent: 1309,
-    distance: 1.38,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 498,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.699389, lng: -72.293749 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 59,
-    name: "1 South St Apt 401",
-    rent: 1747,
-    distance: 5.28,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 827,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.669531, lng: -72.262858 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 60,
-    name: "1 South St Apt 402",
-    rent: 1000,
-    distance: 4.02,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 725,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.706747, lng: -72.326319 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 61,
-    name: "10 Valley Rd Unit 1",
-    rent: 2343,
-    distance: 1.25,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1242,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.702351, lng: -72.310400 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 62,
-    name: "10 Valley Rd Unit 2",
-    rent: 920,
-    distance: 2.46,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1168,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.742325, lng: -72.306284 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 63,
-    name: "13 Lyme Rd",
-    rent: 1384,
-    distance: 4.27,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1433,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.721940, lng: -72.264831 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 16,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 64,
-    name: "1 S. Balch St",
-    rent: 1117,
-    distance: 1.99,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 797,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740997, lng: -72.281166 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 65,
-    name: "3 S. Balch St.",
-    rent: 924,
-    distance: 2.09,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1082,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.667511, lng: -72.289357 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 66,
-    name: "13 Summer St",
-    rent: 1122,
-    distance: 5.78,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 729,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669909, lng: -72.312634 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 10,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 67,
-    name: "13 Teagan Ave",
-    rent: 939,
-    distance: 2.60,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1240,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.738828, lng: -72.281926 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 15,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 68,
-    name: "14 Valley Rd",
-    rent: 2017,
-    distance: 3.83,
-    bedrooms: 4,
-    bathrooms: 2.5,
-    privateBathroom: false,
-    sqft: 1040,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.697038, lng: -72.280806 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 20,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 69,
-    name: "16 Valley Rd",
-    rent: 1447,
-    distance: 1.46,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1267,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.720795, lng: -72.308405 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 70,
-    name: "17 W. Wheelock St -A",
-    rent: 1068,
-    distance: 2.91,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 553,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.737821, lng: -72.252641 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 71,
-    name: "17 W. Wheelock St -B",
-    rent: 1738,
-    distance: 5.98,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 688,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669361, lng: -72.310448 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 72,
-    name: "17 W. Wheelock St - C",
-    rent: 1071,
-    distance: 5.32,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 578,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.733842, lng: -72.297938 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 73,
-    name: "17 W. Wheelock St - D",
-    rent: 1697,
-    distance: 4.31,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 678,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.712434, lng: -72.248521 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 74,
-    name: "17 W. Wheelock St -E",
-    rent: 816,
-    distance: 2.01,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.716571, lng: -72.252386 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 75,
-    name: "17 W. Wheelock St - F",
-    rent: 1341,
-    distance: 5.37,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 459,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.722893, lng: -72.315064 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 76,
-    name: "17 W. Wheelock St - G",
-    rent: 2038,
-    distance: 4.39,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 507,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.679788, lng: -72.276761 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 77,
-    name: "17 W. Wheelock St - H",
-    rent: 1835,
-    distance: 1.73,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 650,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.736153, lng: -72.323436 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 78,
-    name: "17 W. Wheelock St -I",
-    rent: 2498,
-    distance: 0.55,
-    bedrooms: 0,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 1283,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690185, lng: -72.317034 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 0,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 79,
-    name: "17 W. Wheelock St -J",
-    rent: 1130,
-    distance: 3.44,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 626,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.697715, lng: -72.326726 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 80,
-    name: "17 W. Wheelock St Apt K",
-    rent: 2215,
-    distance: 3.41,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 476,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.730268, lng: -72.280899 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 81,
-    name: "17 W. Wheelock St Apt L",
-    rent: 1680,
-    distance: 0.54,
-    bedrooms: 0,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 1130,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.692672, lng: -72.252853 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 0,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 82,
-    name: "17  Valley Rd",
-    rent: 1532,
-    distance: 4.19,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 807,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.716855, lng: -72.299206 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 83,
-    name: "19  Valley Rd",
-    rent: 2591,
-    distance: 5.23,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 821,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.741596, lng: -72.262638 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 84,
-    name: "19 W. Wheelock St - 1W",
-    rent: 850,
-    distance: 4.50,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 491,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690075, lng: -72.253035 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 85,
-    name: "19 W. Wheelock St - 1E",
-    rent: 1346,
-    distance: 4.79,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 481,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.672148, lng: -72.257727 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 86,
-    name: "19 W. Wheelock St - 2W",
-    rent: 1255,
-    distance: 4.95,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 502,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.700324, lng: -72.303085 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 87,
-    name: "19 W. Wheelock St- 2E",
-    rent: 1256,
-    distance: 4.06,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 412,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.695377, lng: -72.305212 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 88,
-    name: "19 W. Wheelock St Apt 3E",
-    rent: 2383,
-    distance: 2.30,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 542,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.704252, lng: -72.273139 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 89,
-    name: "19 W. Wheelock St Apt 3W",
-    rent: 1478,
-    distance: 0.96,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 414,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.741132, lng: -72.313215 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 90,
-    name: "2 S. Balch St - A",
-    rent: 878,
-    distance: 3.70,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 755,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.691155, lng: -72.264586 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 91,
-    name: "2 S. Balch St - B",
-    rent: 2041,
-    distance: 0.96,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 961,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.735460, lng: -72.312294 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 92,
-    name: "21 S. Park St Apt A",
-    rent: 2251,
-    distance: 0.31,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 923,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.737546, lng: -72.284424 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 93,
-    name: "21 S. Park St Apt B",
-    rent: 1545,
-    distance: 0.70,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1441,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.716639, lng: -72.301084 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 94,
-    name: "22 E. Wheelock St - A",
-    rent: 2158,
-    distance: 4.40,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 763,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.687526, lng: -72.302757 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 95,
-    name: "22 E. Wheelock St -B",
-    rent: 1468,
-    distance: 4.27,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 906,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.707853, lng: -72.312153 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 96,
-    name: "22 E. Wheelock St Apt C",
-    rent: 2187,
-    distance: 5.45,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1083,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.712741, lng: -72.303424 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 97,
-    name: "23 S. Park St -1",
-    rent: 2507,
-    distance: 2.03,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 400,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.680315, lng: -72.264639 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 98,
-    name: "23 S. Park St -2",
-    rent: 2140,
-    distance: 2.95,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 564,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.698873, lng: -72.310404 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 99,
-    name: "23 S. Park St -3",
-    rent: 2425,
-    distance: 4.06,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 486,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.686203, lng: -72.274392 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 100,
-    name: "23 S. Park St -4",
-    rent: 1486,
-    distance: 4.97,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 447,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.723591, lng: -72.273676 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 101,
-    name: "23 S. Park St -5",
-    rent: 2451,
-    distance: 1.14,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 501,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.667197, lng: -72.248785 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 102,
-    name: "23 S. Park St -6",
-    rent: 2540,
-    distance: 2.90,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 437,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.734391, lng: -72.281446 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 103,
-    name: "25 Lebanon St Apt 4",
-    rent: 1812,
-    distance: 1.69,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 904,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.715985, lng: -72.327056 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 104,
-    name: "25 Lebanon St Apt 5",
-    rent: 2394,
-    distance: 1.55,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 617,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.727829, lng: -72.271827 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 105,
-    name: "25 Lebanon St Apt 6",
-    rent: 902,
-    distance: 1.72,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1570,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.731367, lng: -72.290983 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 106,
-    name: "25 Lebanon St Apt 7",
-    rent: 2167,
-    distance: 5.93,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 671,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.711136, lng: -72.251497 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 107,
-    name: "25 S. Park St",
-    rent: 2054,
-    distance: 2.73,
-    bedrooms: 4,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1516,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.736048, lng: -72.291827 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 8,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 108,
-    name: "26 E. Wheelock St-A",
-    rent: 2323,
-    distance: 2.87,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1486,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.723642, lng: -72.260311 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 109,
-    name: "26 E. Wheelock St-B",
-    rent: 2368,
-    distance: 3.06,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1533,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.682640, lng: -72.292310 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 110,
-    name: "27 S. Park St",
-    rent: 1280,
-    distance: 2.21,
-    bedrooms: 5,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1278,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.734942, lng: -72.321054 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 10,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 111,
-    name: "28 E. Wheelock St Apt E",
-    rent: 1273,
-    distance: 4.26,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1392,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.720014, lng: -72.322362 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 112,
-    name: "28 E. Wheelock St Apt G",
-    rent: 1477,
-    distance: 2.96,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 677,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.668481, lng: -72.260869 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 113,
-    name: "28 E. Wheelock St Apt W",
-    rent: 2376,
-    distance: 5.69,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 999,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.665063, lng: -72.257047 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 114,
-    name: "29 S. Park St",
-    rent: 1579,
-    distance: 0.33,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1488,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.691641, lng: -72.267222 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 115,
-    name: "3 S. Park St -Apt A",
-    rent: 1902,
-    distance: 1.55,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1499,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.698367, lng: -72.325178 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 116,
-    name: "3 S. Park St-Apt B",
-    rent: 2169,
-    distance: 5.09,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1169,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.737063, lng: -72.249042 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 117,
-    name: "3 Sanborn Rd Apt 1",
-    rent: 855,
-    distance: 3.96,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 742,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.674356, lng: -72.290564 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 118,
-    name: "3 Sanborn Rd Apt 2",
-    rent: 1332,
-    distance: 2.89,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 808,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690500, lng: -72.257129 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 119,
-    name: "3 Sanborn Rd Apt 3",
-    rent: 2340,
-    distance: 2.98,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 741,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.723422, lng: -72.323333 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 120,
-    name: "3 South St Apt A",
-    rent: 1259,
-    distance: 4.60,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1041,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.739469, lng: -72.311551 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 121,
-    name: "3 South St Apt B",
-    rent: 2072,
-    distance: 3.00,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 464,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.672651, lng: -72.251679 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 122,
-    name: "3 South St Apt C",
-    rent: 2232,
-    distance: 3.75,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 785,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740599, lng: -72.270031 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 123,
-    name: "3 Valley Rd Apt A",
-    rent: 1437,
-    distance: 3.58,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 559,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.736142, lng: -72.297475 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 124,
-    name: "3 Valley Rd Apt B",
-    rent: 955,
-    distance: 4.27,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1104,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.687627, lng: -72.272759 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 125,
-    name: "3 Valley Rd Apt C",
-    rent: 2430,
-    distance: 3.34,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1355,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.716422, lng: -72.321983 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 126,
-    name: "3 Valley Rd Apt D",
-    rent: 825,
-    distance: 2.77,
-    bedrooms: 2,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 754,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.692475, lng: -72.256174 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 127,
-    name: "4 S. Balch St",
-    rent: 2248,
-    distance: 4.48,
-    bedrooms: 1,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 490,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740738, lng: -72.305893 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 128,
-    name: "4 Valley Rd Apt 1",
-    rent: 2386,
-    distance: 5.01,
-    bedrooms: 2,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 923,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.710898, lng: -72.301716 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 129,
-    name: "4 Valley Rd Apt 2",
-    rent: 2501,
-    distance: 1.69,
-    bedrooms: 1,
-    bathrooms: 1.5,
-    privateBathroom: true,
-    sqft: 630,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.700677, lng: -72.278673 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 130,
-    name: "419 Mt. Support Rd",
-    rent: 1488,
-    distance: 1.34,
-    bedrooms: 1,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 566,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.680470, lng: -72.263673 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 131,
-    name: "44 E. Wheelock St",
-    rent: 1372,
-    distance: 0.36,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1569,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.739345, lng: -72.320651 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 132,
-    name: "5 S. Park St Apt 1N",
-    rent: 1800,
-    distance: 3.98,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1487,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.702766, lng: -72.264065 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 133,
-    name: "5 S. Park St Apt  2N",
-    rent: 1402,
-    distance: 2.05,
-    bedrooms: 1,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 524,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.710024, lng: -72.289639 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 134,
-    name: "5 S. Park St Apt 1S",
-    rent: 1504,
-    distance: 4.31,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 880,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685173, lng: -72.307388 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 135,
-    name: "5 S. Park St Apt  2S",
-    rent: 2277,
-    distance: 4.53,
-    bedrooms: 1,
-    bathrooms: 1.5,
-    privateBathroom: true,
-    sqft: 461,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.739570, lng: -72.272287 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 136,
-    name: "5 S. Park St Apt 3",
-    rent: 1243,
-    distance: 4.43,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1283,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.741629, lng: -72.285529 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 137,
-    name: "5 South St Apt A",
-    rent: 1005,
-    distance: 2.36,
-    bedrooms: 1,
-    bathrooms: 1.5,
-    privateBathroom: true,
-    sqft: 516,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.687681, lng: -72.270859 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 138,
-    name: "5 South St Apt B",
-    rent: 1361,
-    distance: 1.97,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.739027, lng: -72.276470 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 139,
-    name: "5 Teagan Ave",
-    rent: 1010,
-    distance: 3.03,
-    bedrooms: 1,
-    bathrooms: 1.5,
-    privateBathroom: true,
-    sqft: 640,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690756, lng: -72.250260 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 140,
-    name: "5 Valley Rd Apt A",
-    rent: 2564,
-    distance: 2.58,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 733,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669427, lng: -72.277144 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 141,
-    name: "5 Valley Rd Apt B",
-    rent: 1110,
-    distance: 5.97,
-    bedrooms: 1,
-    bathrooms: 1.5,
-    privateBathroom: true,
-    sqft: 443,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.672976, lng: -72.266345 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 142,
-    name: "5 Valley Rd Apt C",
-    rent: 2020,
-    distance: 2.47,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1535,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.736180, lng: -72.303712 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 143,
-    name: "5 Valley Rd Apt  D",
-    rent: 1678,
-    distance: 5.77,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1012,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.671439, lng: -72.266481 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 144,
-    name: "5 S. Balch St",
-    rent: 1341,
-    distance: 1.67,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1160,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.707659, lng: -72.314977 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 145,
-    name: "7 S. Balch St",
-    rent: 1722,
-    distance: 0.49,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1298,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.686548, lng: -72.304883 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 146,
-    name: "6 S. Balch St Apt A",
-    rent: 945,
-    distance: 4.79,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1270,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.713505, lng: -72.274605 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 147,
-    name: "6 S. Balch St Apt B",
-    rent: 1670,
-    distance: 5.48,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 476,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.729630, lng: -72.321787 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 148,
-    name: "7 South St Apt A",
-    rent: 2423,
-    distance: 1.01,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 924,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.718594, lng: -72.271521 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 149,
-    name: "7 South St Apt B",
-    rent: 1824,
-    distance: 0.76,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1448,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.666689, lng: -72.292938 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 150,
-    name: "7 South St Apt C",
-    rent: 2036,
-    distance: 1.60,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 746,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.717444, lng: -72.258659 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 151,
-    name: "7 South St Apt D",
-    rent: 842,
-    distance: 0.53,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1590,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.724002, lng: -72.289860 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 152,
-    name: "7 South St Apt E",
-    rent: 1369,
-    distance: 5.82,
-    bedrooms: 1,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 651,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.701101, lng: -72.294832 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 153,
-    name: "7 South St Apt F",
-    rent: 2172,
-    distance: 2.65,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 568,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703138, lng: -72.274493 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 154,
-    name: "7 Teagan Ave",
-    rent: 2466,
-    distance: 0.80,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1465,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.683692, lng: -72.318226 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 12,
-    atmosphere: "mixed",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 155,
-    name: "8 S. Balch St Apt A",
-    rent: 2571,
-    distance: 2.93,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1555,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.667836, lng: -72.286025 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 156,
-    name: "8 S. Balch St Apt B",
-    rent: 2349,
-    distance: 0.59,
-    bedrooms: 2,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 1089,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.684864, lng: -72.317019 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 157,
-    name: "8 Valley Rd Apt A",
-    rent: 1697,
-    distance: 0.46,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1124,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.713902, lng: -72.263555 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 158,
-    name: "8 Valley Rd Apt B",
-    rent: 1436,
-    distance: 2.63,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1565,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.681476, lng: -72.260188 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 159,
-    name: "9 South St Apt A",
-    rent: 1745,
-    distance: 5.62,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 655,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.686849, lng: -72.271067 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 160,
-    name: "9 South St Apt B",
-    rent: 2509,
-    distance: 2.90,
-    bedrooms: 2,
-    bathrooms: 2.0,
-    privateBathroom: true,
-    sqft: 824,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.675071, lng: -72.312251 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 10,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 161,
-    name: "9 South St Apt C",
-    rent: 1840,
-    distance: 1.87,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1071,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.726700, lng: -72.294305 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 162,
-    name: "9 South St Apt D",
-    rent: 1347,
-    distance: 5.07,
-    bedrooms: 1,
-    bathrooms: 1.5,
-    privateBathroom: true,
-    sqft: 552,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.709894, lng: -72.274705 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 2,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 163,
-    name: "9 S. Balch St",
-    rent: 1714,
-    distance: 2.19,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1353,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.724530, lng: -72.297323 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 164,
-    name: "11 S. Balch St",
-    rent: 2580,
-    distance: 2.48,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 692,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.731981, lng: -72.294638 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Lebanon",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hannaford", "Price Chopper"],
-      gyms: ["Planet Fitness", "Lebanon Recreation Center"],
-      restaurants: ["Salt hill Pub", "Thai Orchid"],
-      publicTransport: ["Lebanon Transit", "Dartmouth Coach"]
-    }
-  },
-  {
-    id: 165,
-    name: "12 Cedar Dr",
-    rent: 2325,
-    distance: 4.32,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1484,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.728413, lng: -72.296614 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 166,
-    name: "15 Cedar Dr",
-    rent: 1814,
-    distance: 1.02,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1037,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740728, lng: -72.300940 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 167,
-    name: "19 Cedar Dr",
-    rent: 2590,
-    distance: 0.87,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1450,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.736335, lng: -72.326272 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 168,
-    name: "20 Cedar Dr",
-    rent: 1639,
-    distance: 0.73,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1158,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.726022, lng: -72.306298 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 169,
-    name: "23 Cedar Dr",
-    rent: 2218,
-    distance: 4.00,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1407,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.731641, lng: -72.259313 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 170,
-    name: "24 Cedar Dr",
-    rent: 1578,
-    distance: 3.87,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1324,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.734495, lng: -72.288464 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 171,
-    name: "29 Cedar Dr",
-    rent: 873,
-    distance: 1.64,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1070,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.718252, lng: -72.304510 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 6,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 172,
-    name: "30 Cedar Dr",
-    rent: 2329,
-    distance: 2.77,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1092,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.671375, lng: -72.276800 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 173,
-    name: "33 Cedar Dr",
-    rent: 1708,
-    distance: 4.26,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1170,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.735774, lng: -72.323821 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 174,
-    name: "35 Cedar Dr",
-    rent: 1400,
-    distance: 2.44,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1367,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.675146, lng: -72.285007 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 175,
-    name: "37 Cedar Dr",
-    rent: 2196,
-    distance: 1.27,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1184,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669817, lng: -72.257833 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 176,
-    name: "39 Cedar Dr",
-    rent: 2199,
-    distance: 3.14,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1246,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.710153, lng: -72.308925 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 177,
-    name: "43 Cedar Dr",
-    rent: 1741,
-    distance: 4.10,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1261,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.735413, lng: -72.290280 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 178,
-    name: "1 Fletcher Cir",
-    rent: 2187,
-    distance: 1.20,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1559,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.698838, lng: -72.299855 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 179,
-    name: "10 Fletcher Cir",
-    rent: 1412,
-    distance: 4.23,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1434,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.700047, lng: -72.303330 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 180,
-    name: "11 Fletcher Cir",
-    rent: 2547,
-    distance: 0.91,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1494,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.694009, lng: -72.298783 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 181,
-    name: "13 Fletcher Cir",
-    rent: 2232,
-    distance: 0.43,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1302,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.729903, lng: -72.295836 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 182,
-    name: "15 Fletcher Cir",
-    rent: 1959,
-    distance: 5.49,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1050,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.723114, lng: -72.260873 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 183,
-    name: "17 Fletcher Cir",
-    rent: 2388,
-    distance: 3.76,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1235,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.691686, lng: -72.276571 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 184,
-    name: "19 Fletcher Cir",
-    rent: 1313,
-    distance: 3.88,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1140,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.735772, lng: -72.275793 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 185,
-    name: "2 Fletcher Cir",
-    rent: 2415,
-    distance: 0.49,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1451,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.692689, lng: -72.316987 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 186,
-    name: "23 Fletcher Cir",
-    rent: 1469,
-    distance: 1.30,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1425,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.674073, lng: -72.284347 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 187,
-    name: "25 Fletcher Cir",
-    rent: 1887,
-    distance: 5.51,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1513,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.729938, lng: -72.306942 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 188,
-    name: "27 Fletcher Cir",
-    rent: 2451,
-    distance: 4.56,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1302,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690597, lng: -72.318286 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 189,
-    name: "29 Fletcher Cir",
-    rent: 1088,
-    distance: 5.20,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1231,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.721437, lng: -72.249105 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 15,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 190,
-    name: "3 Fletcher Cir",
-    rent: 1549,
-    distance: 4.81,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1092,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.664613, lng: -72.284574 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 191,
-    name: "4 Fletcher Cir",
-    rent: 1554,
-    distance: 3.63,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1268,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.729293, lng: -72.252277 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 3,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 192,
-    name: "5 Fletcher Cir",
-    rent: 2182,
-    distance: 2.99,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1239,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.713064, lng: -72.252046 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 193,
-    name: "6 Fletcher Cir",
-    rent: 2049,
-    distance: 3.99,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1226,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.714332, lng: -72.290359 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 194,
-    name: "7 Fletcher Cir",
-    rent: 2129,
-    distance: 0.97,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1418,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.667128, lng: -72.324523 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 195,
-    name: "8 Fletcher Cir",
-    rent: 1037,
-    distance: 1.64,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1099,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.706504, lng: -72.296408 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 9,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 196,
-    name: "9 Fletcher Cir",
-    rent: 2173,
-    distance: 2.69,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1553,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.722882, lng: -72.315138 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 197,
-    name: "7 Ivy Lane  101",
-    rent: 2141,
-    distance: 5.05,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1101,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.712752, lng: -72.252376 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "quiet",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 198,
-    name: "9 Ivy Lane Unit  101",
-    rent: 867,
-    distance: 1.54,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1379,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.699076, lng: -72.308611 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 199,
-    name: "9 Ivy Lane Unit  102",
-    rent: 1003,
-    distance: 3.40,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1376,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.741727, lng: -72.298806 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 16,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 200,
-    name: "8 N. Park Unit  101",
-    rent: 1365,
-    distance: 5.82,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1194,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.739421, lng: -72.261565 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 201,
-    name: "8 N. Park Unit  102",
-    rent: 2157,
-    distance: 3.96,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1217,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.711272, lng: -72.325791 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 202,
-    name: "8 N. Park Unit  103",
-    rent: 1298,
-    distance: 4.79,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 464,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.679916, lng: -72.261115 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 203,
-    name: "10 N. Park Unit 101",
-    rent: 1224,
-    distance: 1.53,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1600,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.733076, lng: -72.301215 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 204,
-    name: "10 N. Park Unit  102",
-    rent: 2415,
-    distance: 1.88,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1002,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.742222, lng: -72.248498 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 20,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 205,
-    name: "10 N. Park Unit  201",
-    rent: 1313,
-    distance: 0.93,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1178,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.732816, lng: -72.316956 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 206,
-    name: "10 N. Park Unit  202",
-    rent: 2417,
-    distance: 3.66,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1243,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.664762, lng: -72.306271 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 207,
-    name: "10 N. Park Unit  203",
-    rent: 2319,
-    distance: 3.30,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1431,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.723153, lng: -72.289400 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 208,
-    name: "12 N. Park Unit  101",
-    rent: 1851,
-    distance: 2.88,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 455,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.681224, lng: -72.278291 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 209,
-    name: "12 N. Park Unit  102",
-    rent: 1417,
-    distance: 3.97,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 634,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.665992, lng: -72.247613 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 210,
-    name: "14 N. Park",
-    rent: 1673,
-    distance: 3.09,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 455,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.736276, lng: -72.321621 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 211,
-    name: "14 N. Park",
-    rent: 1459,
-    distance: 0.67,
-    bedrooms: 0,
-    bathrooms: 0.0,
-    privateBathroom: true,
-    sqft: 1151,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.685501, lng: -72.276854 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 0,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 212,
-    name: "16 N. Park Unit  101",
-    rent: 2258,
-    distance: 2.47,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1332,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.711291, lng: -72.303908 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 20,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 213,
-    name: "16 N. Park Unit  102",
-    rent: 2039,
-    distance: 0.87,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1440,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.719642, lng: -72.259277 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 20,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 214,
-    name: "16 N. Park Unit 201",
-    rent: 2276,
-    distance: 2.75,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1220,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.734547, lng: -72.294395 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 16,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 215,
-    name: "16 N. Park Unit  202",
-    rent: 1616,
-    distance: 4.46,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1425,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.688504, lng: -72.302498 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 216,
-    name: "16 N. Park Unit  203",
-    rent: 1566,
-    distance: 4.21,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1156,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.701441, lng: -72.320202 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 217,
-    name: "18 N. Park Unit  101",
-    rent: 990,
-    distance: 0.85,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1442,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.722604, lng: -72.262558 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 20,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 218,
-    name: "18 N. Park Unit  102",
-    rent: 922,
-    distance: 5.75,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1600,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.708435, lng: -72.273899 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 16,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 219,
-    name: "18 N. Park Unit  103",
-    rent: 1524,
-    distance: 5.25,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 616,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.721185, lng: -72.250028 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 220,
-    name: "20 N. Park Unit",
-    rent: 1439,
-    distance: 0.89,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1360,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.704093, lng: -72.315122 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 16,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 221,
-    name: "20 N. Park Unit",
-    rent: 1259,
-    distance: 2.30,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1110,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.708001, lng: -72.318309 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 222,
-    name: "20 N. Park Unit",
-    rent: 1975,
-    distance: 4.90,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 515,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.731112, lng: -72.249536 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 223,
-    name: "22 N. Park Unit  101",
-    rent: 2056,
-    distance: 0.45,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1570,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.737827, lng: -72.261143 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 224,
-    name: "22 N. Park Unit  102",
-    rent: 859,
-    distance: 1.86,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1184,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.724493, lng: -72.253777 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 225,
-    name: "22 N. Park Unit  201",
-    rent: 812,
-    distance: 5.26,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1185,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.708806, lng: -72.295437 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 226,
-    name: "22 N. Park Unit  202",
-    rent: 2317,
-    distance: 0.82,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1031,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.705939, lng: -72.297404 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 16,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 227,
-    name: "22 N. Park Unit  203",
-    rent: 1498,
-    distance: 2.41,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1161,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.721228, lng: -72.265353 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 20,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 228,
-    name: "24 N. Park Unit  101",
-    rent: 2021,
-    distance: 5.34,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1086,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.675946, lng: -72.267145 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 229,
-    name: "24 N. Park Unit  102",
-    rent: 2180,
-    distance: 1.85,
-    bedrooms: 4,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1083,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.716455, lng: -72.288647 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 16,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 230,
-    name: "24 N. Park Unit 103",
-    rent: 1648,
-    distance: 1.53,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 539,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.704488, lng: -72.299886 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "Hanover",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Hanover Co-op", "Whole Foods"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Lou's Restaurant", "Pine Restaurant"],
-      publicTransport: ["Advance Transit", "Dartmouth Shuttle"]
-    }
-  },
-  {
-    id: 231,
-    name: "1 Drake Lane",
-    rent: 1380,
-    distance: 4.17,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.710951, lng: -72.285345 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 232,
-    name: "3 Drake Lane",
-    rent: 893,
-    distance: 1.56,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.742256, lng: -72.323117 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 233,
-    name: "4 Drake Lane",
-    rent: 1417,
-    distance: 5.69,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.724888, lng: -72.266367 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 234,
-    name: "5 Drake Lane",
-    rent: 1471,
-    distance: 0.98,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.703291, lng: -72.293048 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 235,
-    name: "6 Drake Lane",
-    rent: 1578,
-    distance: 3.34,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.681909, lng: -72.282802 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 236,
-    name: "7 Drake Lane",
-    rent: 947,
-    distance: 2.56,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.722863, lng: -72.292602 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 237,
-    name: "8 Drake Lane",
-    rent: 959,
-    distance: 5.21,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.709561, lng: -72.281628 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 238,
-    name: "9 Drake Lane",
-    rent: 1392,
-    distance: 0.96,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.665169, lng: -72.301519 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 239,
-    name: "11 Drake Lane",
-    rent: 1742,
-    distance: 5.04,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.737082, lng: -72.320450 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 240,
-    name: "13 Drake Lane",
-    rent: 1298,
-    distance: 2.78,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.695536, lng: -72.321208 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 241,
-    name: "15 Drake Lane",
-    rent: 2327,
-    distance: 2.24,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690145, lng: -72.314049 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 242,
-    name: "17 Drake Lane",
-    rent: 2096,
-    distance: 0.95,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.704296, lng: -72.255026 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 243,
-    name: "18 Drake Lane",
-    rent: 1519,
-    distance: 4.45,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.729016, lng: -72.262297 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 244,
-    name: "19 Drake Lane",
-    rent: 1010,
-    distance: 1.13,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.679282, lng: -72.279308 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 245,
-    name: "20 Drake Lane",
-    rent: 1162,
-    distance: 5.72,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.713736, lng: -72.290384 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 246,
-    name: "21 Drake Lane",
-    rent: 2356,
-    distance: 3.60,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.717991, lng: -72.256936 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 247,
-    name: "22 Drake Lane",
-    rent: 1461,
-    distance: 5.23,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.713677, lng: -72.315423 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 248,
-    name: "23 Drake Lane",
-    rent: 1760,
-    distance: 2.82,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.687726, lng: -72.305526 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 249,
-    name: "24 Drake Lane",
-    rent: 1520,
-    distance: 3.19,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.688333, lng: -72.291347 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 250,
-    name: "25 Drake Lane",
-    rent: 1555,
-    distance: 5.04,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669638, lng: -72.258360 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 251,
-    name: "26 Drake Lane",
-    rent: 2059,
-    distance: 3.69,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.694259, lng: -72.281074 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 252,
-    name: "27 Drake Lane",
-    rent: 1721,
-    distance: 5.48,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.709233, lng: -72.312441 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 253,
-    name: "28 Drake Lane",
-    rent: 1774,
-    distance: 3.16,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740118, lng: -72.291458 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 254,
-    name: "29 Drake Lane",
-    rent: 2262,
-    distance: 0.78,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.715190, lng: -72.324369 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 255,
-    name: "30 Drake Lane",
-    rent: 1699,
-    distance: 3.29,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.712284, lng: -72.298388 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 256,
-    name: "31 Drake Lane",
-    rent: 1593,
-    distance: 2.63,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690569, lng: -72.279669 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 257,
-    name: "32 Drake Lane",
-    rent: 934,
-    distance: 2.18,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.708137, lng: -72.296575 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 258,
-    name: "33 Drake Lane",
-    rent: 2282,
-    distance: 5.15,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.740653, lng: -72.279284 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 259,
-    name: "34 Drake Lane",
-    rent: 1482,
-    distance: 0.76,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.716589, lng: -72.254160 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 260,
-    name: "35 Drake Lane",
-    rent: 2143,
-    distance: 4.28,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.694857, lng: -72.279897 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 261,
-    name: "36 Drake Lane",
-    rent: 1434,
-    distance: 3.49,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.714979, lng: -72.301222 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 262,
-    name: "37 Drake Lane",
-    rent: 2172,
-    distance: 4.31,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.739269, lng: -72.247727 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 263,
-    name: "38 Drake Lane",
-    rent: 991,
-    distance: 3.98,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.697373, lng: -72.298554 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 264,
-    name: "39 Drake Lane",
-    rent: 1432,
-    distance: 1.33,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.680635, lng: -72.251687 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 265,
-    name: "40 Drake Lane",
-    rent: 1193,
-    distance: 1.59,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.674505, lng: -72.321327 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 266,
-    name: "41 Drake Lane",
-    rent: 1839,
-    distance: 4.69,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.730310, lng: -72.256805 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 267,
-    name: "43 Drake Lane",
-    rent: 2155,
-    distance: 2.22,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.724805, lng: -72.317016 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 268,
-    name: "45 Drake Lane",
-    rent: 1115,
-    distance: 1.22,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.730008, lng: -72.265812 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 269,
-    name: "47 Drake Lane",
-    rent: 2276,
-    distance: 2.79,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.696369, lng: -72.273391 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 270,
-    name: "49 Drake Lane",
-    rent: 1709,
-    distance: 3.78,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.723691, lng: -72.264796 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 271,
-    name: "51 Drake Lane",
-    rent: 1893,
-    distance: 1.66,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740748, lng: -72.264750 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 272,
-    name: "53 Drake Lane",
-    rent: 1553,
-    distance: 4.17,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.709134, lng: -72.292252 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 273,
-    name: "55 Drake Lane",
-    rent: 2393,
-    distance: 2.48,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.705697, lng: -72.250199 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 274,
-    name: "57 Drake Lane",
-    rent: 2440,
-    distance: 3.75,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.733340, lng: -72.323326 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 275,
-    name: "59 Drake Lane",
-    rent: 2590,
-    distance: 2.42,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.738243, lng: -72.270588 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 276,
-    name: "61 Drake Lane",
-    rent: 2543,
-    distance: 1.01,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.670210, lng: -72.314675 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 277,
-    name: "63 Drake Lane",
-    rent: 1851,
-    distance: 1.14,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.698498, lng: -72.251787 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 278,
-    name: "65 Drake Lane",
-    rent: 2472,
-    distance: 2.87,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.691467, lng: -72.325366 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 279,
-    name: "67 Drake Lane",
-    rent: 1611,
-    distance: 3.16,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.682362, lng: -72.247938 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 280,
-    name: "69 Drake Lane",
-    rent: 1259,
-    distance: 0.46,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.737966, lng: -72.260366 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 281,
-    name: "71 Drake Lane",
-    rent: 2420,
-    distance: 1.13,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.666564, lng: -72.254108 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 282,
-    name: "73 Drake Lane",
-    rent: 2225,
-    distance: 5.04,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.724207, lng: -72.289971 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 283,
-    name: "75 Drake Lane",
-    rent: 810,
-    distance: 5.46,
-    bedrooms: 3,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1380,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.665020, lng: -72.310248 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 284,
-    name: "1 Field Road",
-    rent: 1923,
-    distance: 5.66,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.712210, lng: -72.293640 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 285,
-    name: "2 Field Road",
-    rent: 1286,
-    distance: 2.02,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667320, lng: -72.293914 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 286,
-    name: "3 Field Road",
-    rent: 1736,
-    distance: 0.66,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.730435, lng: -72.287514 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 287,
-    name: "4 Field Road",
-    rent: 833,
-    distance: 3.90,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.709504, lng: -72.270016 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 288,
-    name: "5 Field Road",
-    rent: 1679,
-    distance: 0.31,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.691725, lng: -72.281847 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 289,
-    name: "6 Field Road",
-    rent: 2160,
-    distance: 4.11,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.705379, lng: -72.298652 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 290,
-    name: "7 Field Road",
-    rent: 1914,
-    distance: 3.19,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.742567, lng: -72.283168 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 291,
-    name: "8 Field Road",
-    rent: 2588,
-    distance: 2.98,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.714354, lng: -72.249017 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 292,
-    name: "9 Field Road",
-    rent: 2330,
-    distance: 0.39,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.726582, lng: -72.299916 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 293,
-    name: "10 Field Road",
-    rent: 2380,
-    distance: 3.62,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.724034, lng: -72.316827 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 294,
-    name: "11 Field Road",
-    rent: 1918,
-    distance: 2.23,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.714924, lng: -72.261069 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 295,
-    name: "12 Field Road",
-    rent: 2224,
-    distance: 3.03,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.678082, lng: -72.316712 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 296,
-    name: "13 Field Road",
-    rent: 875,
-    distance: 1.97,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667005, lng: -72.311542 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 297,
-    name: "14 Field Road",
-    rent: 1446,
-    distance: 5.62,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.704731, lng: -72.248370 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 298,
-    name: "15 Field Road",
-    rent: 1769,
-    distance: 1.74,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.723763, lng: -72.312212 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 299,
-    name: "16 Field Road",
-    rent: 2565,
-    distance: 4.75,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.732764, lng: -72.300946 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 300,
-    name: "17 Field Road",
-    rent: 2437,
-    distance: 2.40,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.734659, lng: -72.268035 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 301,
-    name: "18 Field Road",
-    rent: 1494,
-    distance: 5.85,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.703196, lng: -72.287698 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 302,
-    name: "19 Field Road",
-    rent: 1346,
-    distance: 4.87,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.721667, lng: -72.321186 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 303,
-    name: "20 Field Road",
-    rent: 2484,
-    distance: 1.33,
-    bedrooms: 3,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 704,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.687001, lng: -72.319292 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 304,
-    name: "26 Field Road",
-    rent: 2153,
-    distance: 1.99,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.699173, lng: -72.270087 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 305,
-    name: "28 Field Road",
-    rent: 2212,
-    distance: 2.83,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.699270, lng: -72.269355 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 306,
-    name: "30 Field Road",
-    rent: 2059,
-    distance: 5.99,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.685464, lng: -72.249098 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 307,
-    name: "32 Field Road",
-    rent: 953,
-    distance: 4.13,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.695997, lng: -72.286453 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 308,
-    name: "34 Field Road",
-    rent: 863,
-    distance: 1.11,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.712106, lng: -72.264995 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 309,
-    name: "36 Field Road",
-    rent: 1058,
-    distance: 0.68,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 644,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.725781, lng: -72.298194 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 310,
-    name: "64 Gould Road",
-    rent: 1961,
-    distance: 0.48,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.675775, lng: -72.291506 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 311,
-    name: "66 Gould Road",
-    rent: 1561,
-    distance: 2.83,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669651, lng: -72.316484 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 312,
-    name: "68 Gould Road",
-    rent: 1615,
-    distance: 2.09,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685795, lng: -72.250658 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 313,
-    name: "70 Gould Road",
-    rent: 2306,
-    distance: 1.36,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.704920, lng: -72.254417 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 314,
-    name: "72 Gould Road",
-    rent: 1336,
-    distance: 4.72,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.719823, lng: -72.310334 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 315,
-    name: "74 Gould Road",
-    rent: 1384,
-    distance: 4.26,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1250,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.743390, lng: -72.311486 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 316,
-    name: "76 Gould Road",
-    rent: 2546,
-    distance: 0.72,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.677313, lng: -72.270430 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 317,
-    name: "77 Gould Road",
-    rent: 2459,
-    distance: 4.19,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.731142, lng: -72.301933 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 318,
-    name: "78 Gould Road",
-    rent: 2253,
-    distance: 0.67,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.706874, lng: -72.256193 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 319,
-    name: "79 Gould Road",
-    rent: 2257,
-    distance: 4.34,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1250,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.719518, lng: -72.313573 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 320,
-    name: "80 Gould Road",
-    rent: 1841,
-    distance: 1.58,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.742311, lng: -72.264135 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 321,
-    name: "81 Gould Road",
-    rent: 2418,
-    distance: 3.12,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.692372, lng: -72.281718 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 322,
-    name: "82 Gould Road",
-    rent: 2445,
-    distance: 5.90,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.673882, lng: -72.256760 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 323,
-    name: "84 Gould Road",
-    rent: 1433,
-    distance: 2.57,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.720855, lng: -72.289207 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 324,
-    name: "86 Gould Road",
-    rent: 2375,
-    distance: 2.63,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.709492, lng: -72.317474 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 325,
-    name: "88 Gould Road",
-    rent: 2115,
-    distance: 0.72,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.700767, lng: -72.286111 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 326,
-    name: "90 Gould Road",
-    rent: 2598,
-    distance: 5.03,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.707604, lng: -72.280477 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 327,
-    name: "92 Gould Road",
-    rent: 1686,
-    distance: 3.17,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1250,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.732957, lng: -72.260989 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 328,
-    name: "94 Gould Road",
-    rent: 1113,
-    distance: 2.03,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.676457, lng: -72.252721 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 329,
-    name: "96 Gould Road, Apt. 1",
-    rent: 1508,
-    distance: 5.70,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.705012, lng: -72.304776 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 330,
-    name: "96 Gould Road, Apt. 2",
-    rent: 1313,
-    distance: 1.42,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.740008, lng: -72.305544 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 331,
-    name: "96 Gould Road, Apt. 3",
-    rent: 2058,
-    distance: 3.34,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.703706, lng: -72.314009 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 332,
-    name: "96 Gould Road, Apt. 4",
-    rent: 1115,
-    distance: 1.28,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.713458, lng: -72.255340 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 333,
-    name: "96 Gould Road, Apt. 5",
-    rent: 2525,
-    distance: 5.57,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.666796, lng: -72.258398 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 334,
-    name: "96 Gould Road, Apt. 6",
-    rent: 893,
-    distance: 5.71,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.725182, lng: -72.306328 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 335,
-    name: "100 Gould Road",
-    rent: 2370,
-    distance: 3.56,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.712949, lng: -72.325077 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 336,
-    name: "102 Gould Road",
-    rent: 1393,
-    distance: 3.96,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.687668, lng: -72.307910 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 337,
-    name: "104 Gould Road",
-    rent: 1409,
-    distance: 2.89,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.718589, lng: -72.314854 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 338,
-    name: "106 Gould Road",
-    rent: 1791,
-    distance: 2.95,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.690715, lng: -72.316007 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 339,
-    name: "108 Gould Road",
-    rent: 2303,
-    distance: 5.93,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.691130, lng: -72.295603 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 340,
-    name: "110 Gould Road",
-    rent: 1854,
-    distance: 3.50,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.689029, lng: -72.290182 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 341,
-    name: "114 Gould Road",
-    rent: 1720,
-    distance: 1.71,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.671245, lng: -72.304283 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 342,
-    name: "116 Gould Road",
-    rent: 2569,
-    distance: 3.81,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.683362, lng: -72.258275 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 343,
-    name: "118 Gould Road",
-    rent: 2466,
-    distance: 2.17,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.709715, lng: -72.302483 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 344,
-    name: "120 Gould Road",
-    rent: 1820,
-    distance: 5.98,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.700845, lng: -72.257174 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 345,
-    name: "122 Gould Road",
-    rent: 847,
-    distance: 0.81,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.694959, lng: -72.290922 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 346,
-    name: "124 Gould Road",
-    rent: 1240,
-    distance: 3.63,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667393, lng: -72.304991 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 347,
-    name: "126 Gould Road",
-    rent: 2526,
-    distance: 4.03,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.701147, lng: -72.284565 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 348,
-    name: "128 Gould Road",
-    rent: 1682,
-    distance: 1.06,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.684658, lng: -72.298238 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 349,
-    name: "130 Gould Road",
-    rent: 1549,
-    distance: 0.56,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667593, lng: -72.282555 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 350,
-    name: "132 Gould Road",
-    rent: 1933,
-    distance: 1.95,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.694408, lng: -72.291472 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 351,
-    name: "134 Gould Road",
-    rent: 1372,
-    distance: 5.00,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.713359, lng: -72.278617 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 352,
-    name: "136 Gould Road",
-    rent: 998,
-    distance: 2.55,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.727092, lng: -72.300373 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 353,
-    name: "1 Haddock Lane",
-    rent: 2346,
-    distance: 1.12,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.711697, lng: -72.295389 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 354,
-    name: "2 Haddock Lane",
-    rent: 892,
-    distance: 0.52,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.720587, lng: -72.263183 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 355,
-    name: "3 Haddock Lane",
-    rent: 1735,
-    distance: 1.15,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1250,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.734951, lng: -72.316318 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 356,
-    name: "4 Haddock Lane",
-    rent: 1452,
-    distance: 1.23,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.742749, lng: -72.268354 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 357,
-    name: "5 Haddock Lane",
-    rent: 2015,
-    distance: 2.22,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 832,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.729763, lng: -72.284913 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 358,
-    name: "6 Haddock Lane",
-    rent: 1413,
-    distance: 3.01,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.664831, lng: -72.301001 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 359,
-    name: "7 Haddock Lane",
-    rent: 1653,
-    distance: 3.63,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.727240, lng: -72.269474 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 360,
-    name: "8 Haddock Lane",
-    rent: 2022,
-    distance: 3.01,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.740866, lng: -72.264868 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 361,
-    name: "9 Haddock Lane",
-    rent: 1982,
-    distance: 1.60,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667608, lng: -72.289064 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 362,
-    name: "11 Haddock Lane",
-    rent: 2088,
-    distance: 4.41,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.725468, lng: -72.297085 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 363,
-    name: "13 Haddock Lane",
-    rent: 864,
-    distance: 3.56,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.719542, lng: -72.312237 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 364,
-    name: "15 Haddock Lane",
-    rent: 1442,
-    distance: 2.69,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.696537, lng: -72.311189 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 365,
-    name: "17 Haddock Lane",
-    rent: 2387,
-    distance: 3.79,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 603,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.701228, lng: -72.259630 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 366,
-    name: "19 Haddock Lane",
-    rent: 2245,
-    distance: 1.09,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.680087, lng: -72.301496 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 367,
-    name: "21 Haddock Lane",
-    rent: 1876,
-    distance: 2.45,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.740035, lng: -72.290727 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 368,
-    name: "23 Haddock Lane",
-    rent: 1501,
-    distance: 3.41,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 683,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.717569, lng: -72.258088 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 369,
-    name: "2 Ralston Lane",
-    rent: 2049,
-    distance: 3.06,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.740087, lng: -72.305179 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 370,
-    name: "4 Ralston Lane",
-    rent: 1260,
-    distance: 5.67,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.742081, lng: -72.265806 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 371,
-    name: "6 Ralston Lane",
-    rent: 2213,
-    distance: 4.32,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.688863, lng: -72.299596 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 372,
-    name: "8 Ralston Lane",
-    rent: 1389,
-    distance: 0.99,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.717630, lng: -72.297124 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 373,
-    name: "10 Ralston Lane",
-    rent: 2476,
-    distance: 2.27,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.725345, lng: -72.315782 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 374,
-    name: "12 Ralston Lane",
-    rent: 1389,
-    distance: 5.75,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669822, lng: -72.253579 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 375,
-    name: "14 Ralston Lane",
-    rent: 2330,
-    distance: 3.03,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.679665, lng: -72.284414 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 376,
-    name: "16 Ralston Lane",
-    rent: 2225,
-    distance: 1.85,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.672238, lng: -72.268229 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 377,
-    name: "18 Ralston Lane",
-    rent: 1296,
-    distance: 0.59,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.735915, lng: -72.309446 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 378,
-    name: "20 Ralston Lane",
-    rent: 907,
-    distance: 0.87,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.689923, lng: -72.289708 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 379,
-    name: "22 Ralston Lane",
-    rent: 810,
-    distance: 5.80,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.741733, lng: -72.314865 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 380,
-    name: "24 Ralston Lane",
-    rent: 1777,
-    distance: 4.01,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.723973, lng: -72.304520 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 381,
-    name: "26 Ralston Lane",
-    rent: 2122,
-    distance: 0.64,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.724998, lng: -72.275316 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 382,
-    name: "28 Ralston Lane",
-    rent: 1895,
-    distance: 4.51,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.731527, lng: -72.324516 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 383,
-    name: "30 Ralston Lane",
-    rent: 1655,
-    distance: 5.33,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.677563, lng: -72.253929 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 384,
-    name: "32 Ralston Lane",
-    rent: 2413,
-    distance: 3.12,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.738429, lng: -72.250529 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 385,
-    name: "34 Ralston Lane",
-    rent: 2595,
-    distance: 0.51,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.687371, lng: -72.279277 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 386,
-    name: "36 Ralston Lane",
-    rent: 1382,
-    distance: 2.89,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.714805, lng: -72.285555 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 387,
-    name: "38 Ralston Lane",
-    rent: 2542,
-    distance: 3.17,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685327, lng: -72.262795 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 388,
-    name: "40 Ralston Lane",
-    rent: 1132,
-    distance: 4.47,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.715363, lng: -72.270012 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 389,
-    name: "1 Sachem Circle",
-    rent: 2308,
-    distance: 2.22,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.687102, lng: -72.273548 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 390,
-    name: "2 Sachem Circle",
-    rent: 1159,
-    distance: 3.78,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.714598, lng: -72.295061 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 391,
-    name: "3 Sachem Circle",
-    rent: 1855,
-    distance: 2.17,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.695567, lng: -72.319869 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 392,
-    name: "4 Sachem Circle",
-    rent: 1777,
-    distance: 2.14,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.683344, lng: -72.306637 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 393,
-    name: "5 Sachem Circle",
-    rent: 1714,
-    distance: 4.60,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.739823, lng: -72.303344 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 394,
-    name: "6 Sachem Circle",
-    rent: 823,
-    distance: 1.79,
-    bedrooms: 2,
-    bathrooms: 2.5,
-    privateBathroom: true,
-    sqft: 1024,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.692264, lng: -72.308596 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 395,
-    name: "7 Sachem Circle",
-    rent: 1753,
-    distance: 2.05,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 938,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.695933, lng: -72.287298 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 396,
-    name: "8 Sachem Circle, Apt. 1",
-    rent: 2213,
-    distance: 0.97,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.736790, lng: -72.303897 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 397,
-    name: "8 Sachem Circle, Apt. 2",
-    rent: 1252,
-    distance: 1.55,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.674186, lng: -72.315245 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 398,
-    name: "8 Sachem Circle, Apt. 3",
-    rent: 1565,
-    distance: 2.67,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.707439, lng: -72.289834 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 399,
-    name: "8 Sachem Circle, Apt. 4",
-    rent: 2442,
-    distance: 4.09,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.680973, lng: -72.307703 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 400,
-    name: "8 Sachem Circle, Apt. 5",
-    rent: 2588,
-    distance: 4.79,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.705541, lng: -72.285246 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 401,
-    name: "8 Sachem Circle, Apt. 6",
-    rent: 959,
-    distance: 5.53,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.672477, lng: -72.261198 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 15,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 402,
-    name: "9 Sachem Circle",
-    rent: 1214,
-    distance: 3.56,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1032,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.675488, lng: -72.301251 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 403,
-    name: "10 Sachem Circle",
-    rent: 1704,
-    distance: 0.96,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1032,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.679932, lng: -72.280848 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 404,
-    name: "11 Sachem Circle, Apt. 1",
-    rent: 1845,
-    distance: 2.84,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667951, lng: -72.316944 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 405,
-    name: "11 Sachem Circle, Apt. 2",
-    rent: 1735,
-    distance: 3.51,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.708204, lng: -72.273679 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 406,
-    name: "11 Sachem Circle, Apt. 3",
-    rent: 2281,
-    distance: 0.42,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.683857, lng: -72.327259 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 407,
-    name: "11 Sachem Circle, Apt. 4",
-    rent: 1984,
-    distance: 0.72,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.697396, lng: -72.271469 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 408,
-    name: "11 Sachem Circle, Apt. 5",
-    rent: 923,
-    distance: 5.63,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.669022, lng: -72.252798 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 409,
-    name: "11 Sachem Circle, Apt. 6",
-    rent: 1387,
-    distance: 2.63,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.725018, lng: -72.266234 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 410,
-    name: "12 Sachem Circle, Apt. 1",
-    rent: 1566,
-    distance: 5.96,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.694098, lng: -72.257930 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 411,
-    name: "12 Sachem Circle, Apt. 2",
-    rent: 1569,
-    distance: 0.76,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.740632, lng: -72.257536 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 412,
-    name: "12 Sachem Circle, Apt. 3",
-    rent: 2138,
-    distance: 5.20,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.672991, lng: -72.248072 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 413,
-    name: "12 Sachem Circle, Apt. 4",
-    rent: 1883,
-    distance: 1.03,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.741798, lng: -72.260714 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 414,
-    name: "12 Sachem Circle, Apt. 5",
-    rent: 1411,
-    distance: 2.94,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.721028, lng: -72.293570 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 415,
-    name: "12 Sachem Circle, Apt. 6",
-    rent: 2486,
-    distance: 1.61,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.700350, lng: -72.315090 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 416,
-    name: "12 Sachem Circle, Apt. 7",
-    rent: 2592,
-    distance: 4.43,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.672528, lng: -72.262742 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 417,
-    name: "12 Sachem Circle, Apt. 8",
-    rent: 2059,
-    distance: 4.67,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.734201, lng: -72.326248 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 418,
-    name: "13 Sachem Circle, Apt. 1",
-    rent: 937,
-    distance: 0.88,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.666186, lng: -72.279677 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 419,
-    name: "13 Sachem Circle, Apt. 2",
-    rent: 1301,
-    distance: 4.52,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.695681, lng: -72.308753 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 420,
-    name: "13 Sachem Circle, Apt. 3",
-    rent: 2344,
-    distance: 5.22,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.668016, lng: -72.287188 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 421,
-    name: "13 Sachem Circle, Apt. 4",
-    rent: 1279,
-    distance: 4.95,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.722021, lng: -72.301988 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 422,
-    name: "13 Sachem Circle, Apt. 5",
-    rent: 2382,
-    distance: 4.13,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.689153, lng: -72.303359 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 423,
-    name: "13 Sachem Circle, Apt. 6",
-    rent: 2152,
-    distance: 3.27,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.696585, lng: -72.305488 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 5,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 424,
-    name: "13 Sachem Circle, Apt. 7",
-    rent: 2011,
-    distance: 5.31,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.736426, lng: -72.277421 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 425,
-    name: "13 Sachem Circle, Apt. 8",
-    rent: 1938,
-    distance: 3.13,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.741283, lng: -72.252173 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 426,
-    name: "14 Sachem Circle, Apt. 1",
-    rent: 2409,
-    distance: 3.29,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.719205, lng: -72.294839 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 9,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 427,
-    name: "14 Sachem Circle, Apt. 2",
-    rent: 1570,
-    distance: 1.35,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.706534, lng: -72.308223 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 428,
-    name: "14 Sachem Circle, Apt. 3",
-    rent: 1415,
-    distance: 5.19,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.675048, lng: -72.290458 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 429,
-    name: "14 Sachem Circle, Apt. 4",
-    rent: 1951,
-    distance: 2.65,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.696821, lng: -72.285101 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 430,
-    name: "14 Sachem Circle, Apt. 5",
-    rent: 1297,
-    distance: 1.75,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.689921, lng: -72.321174 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 431,
-    name: "14 Sachem Circle, Apt. 6",
-    rent: 2534,
-    distance: 2.42,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.706351, lng: -72.261147 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 432,
-    name: "14 Sachem Circle, Apt. 7",
-    rent: 1349,
-    distance: 2.45,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.711898, lng: -72.324336 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 1,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 433,
-    name: "14 Sachem Circle, Apt. 8",
-    rent: 1185,
-    distance: 4.89,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.710507, lng: -72.273784 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 434,
-    name: "15 Sachem Circle, Apt. 1",
-    rent: 1781,
-    distance: 1.49,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.736063, lng: -72.303245 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 3,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 435,
-    name: "15 Sachem Circle, Apt. 2",
-    rent: 1233,
-    distance: 5.64,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.740466, lng: -72.318115 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 436,
-    name: "15 Sachem Circle, Apt. 3",
-    rent: 1296,
-    distance: 4.27,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.719801, lng: -72.295769 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 437,
-    name: "15 Sachem Circle, Apt. 4",
-    rent: 1930,
-    distance: 2.13,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.686145, lng: -72.290200 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 438,
-    name: "15 Sachem Circle, Apt. 5",
-    rent: 1431,
-    distance: 1.79,
-    bedrooms: 2,
-    bathrooms: 1.5,
-    privateBathroom: false,
-    sqft: 1026,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.704525, lng: -72.287718 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 439,
-    name: "15 Sachem Circle, Apt. 6",
-    rent: 2444,
-    distance: 5.89,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.701059, lng: -72.260322 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 440,
-    name: "15 Sachem Circle, Apt. 7",
-    rent: 1559,
-    distance: 2.08,
-    bedrooms: 1,
-    bathrooms: 1.0,
-    privateBathroom: true,
-    sqft: 720,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.667157, lng: -72.258373 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 441,
-    name: "15 Sachem Circle, Apt. 8",
-    rent: 833,
-    distance: 1.79,
-    bedrooms: 3,
-    bathrooms: 2.0,
-    privateBathroom: false,
-    sqft: 1222,
-    amenities: ["Parking", "WiFi"],
-    coordinates: { lat: 43.738281, lng: -72.281169 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 12,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 442,
-    name: "22 Sachem Circle",
-    rent: 1404,
-    distance: 1.17,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.689889, lng: -72.297113 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 443,
-    name: "23 Sachem Circle",
-    rent: 1822,
-    distance: 3.44,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.738977, lng: -72.300495 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 444,
-    name: "24 Sachem Circle",
-    rent: 2281,
-    distance: 3.96,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.702748, lng: -72.314041 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 445,
-    name: "25 Sachem Circle",
-    rent: 1146,
-    distance: 1.10,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.707224, lng: -72.312776 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 446,
-    name: "26 Sachem Circle",
-    rent: 2114,
-    distance: 5.76,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.705416, lng: -72.260375 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 447,
-    name: "27 Sachem Circle",
-    rent: 2475,
-    distance: 4.11,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.724647, lng: -72.294509 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 448,
-    name: "28 Sachem Circle",
-    rent: 939,
-    distance: 4.33,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.664231, lng: -72.287041 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 449,
-    name: "29 Sachem Circle",
-    rent: 923,
-    distance: 3.82,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.716840, lng: -72.278178 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 450,
-    name: "30 Sachem Circle",
-    rent: 2150,
-    distance: 3.08,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.664029, lng: -72.283369 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 451,
-    name: "31 Sachem Circle",
-    rent: 834,
-    distance: 3.32,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685479, lng: -72.249302 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 452,
-    name: "32 Sachem Circle",
-    rent: 1828,
-    distance: 4.93,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.717423, lng: -72.263007 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 453,
-    name: "33 Sachem Circle",
-    rent: 1019,
-    distance: 5.53,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.705451, lng: -72.308222 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 454,
-    name: "34 Sachem Circle",
-    rent: 1878,
-    distance: 1.74,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.691855, lng: -72.263905 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 455,
-    name: "35 Sachem Circle",
-    rent: 1564,
-    distance: 5.77,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.700220, lng: -72.308043 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 456,
-    name: "36 Sachem CIrcle",
-    rent: 1414,
-    distance: 4.20,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.731329, lng: -72.275201 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 457,
-    name: "37 Sachem Circle",
-    rent: 991,
-    distance: 2.61,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.693674, lng: -72.289420 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 458,
-    name: "38 Sachem Circle",
-    rent: 2239,
-    distance: 1.28,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.703489, lng: -72.292787 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 459,
-    name: "39 Sachem Circle",
-    rent: 1958,
-    distance: 5.87,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.741407, lng: -72.255917 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 460,
-    name: "40 Sachem Circle",
-    rent: 1270,
-    distance: 1.51,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.732949, lng: -72.256496 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 461,
-    name: "41 Sachem Circle",
-    rent: 1355,
-    distance: 0.57,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669448, lng: -72.253453 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 462,
-    name: "42 Sachem Circle",
-    rent: 1954,
-    distance: 4.05,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.677848, lng: -72.259466 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 463,
-    name: "43 Sachem Circle",
-    rent: 1224,
-    distance: 3.65,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.723680, lng: -72.270483 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 464,
-    name: "44 Sachem Circle",
-    rent: 957,
-    distance: 2.01,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.708617, lng: -72.282164 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 465,
-    name: "45 Sachem Circle",
-    rent: 2186,
-    distance: 5.41,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.690038, lng: -72.267051 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 466,
-    name: "46 Sachem Circle",
-    rent: 2418,
-    distance: 5.93,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.721433, lng: -72.287437 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 467,
-    name: "47 Sachem Circle",
-    rent: 909,
-    distance: 0.86,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.682072, lng: -72.321419 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 468,
-    name: "48 Sachem Circle",
-    rent: 2374,
-    distance: 3.80,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.711149, lng: -72.249986 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 469,
-    name: "49 Sachem Circle",
-    rent: 860,
-    distance: 3.91,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.726184, lng: -72.291456 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 470,
-    name: "50 Sachem Circle",
-    rent: 1528,
-    distance: 3.45,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.693534, lng: -72.312641 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 471,
-    name: "51 Sachem Circle",
-    rent: 2153,
-    distance: 2.47,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.725273, lng: -72.303870 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 472,
-    name: "52 Sachem Circle",
-    rent: 2260,
-    distance: 0.72,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.684938, lng: -72.297100 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 473,
-    name: "53 Sachem Circle",
-    rent: 2314,
-    distance: 2.52,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.692356, lng: -72.320178 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 474,
-    name: "54 Sachem Circle",
-    rent: 1710,
-    distance: 2.35,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.685081, lng: -72.316899 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 475,
-    name: "55 Sachem Circle",
-    rent: 1682,
-    distance: 2.86,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.707879, lng: -72.294856 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 476,
-    name: "56 Sachem Circle",
-    rent: 983,
-    distance: 2.32,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.670945, lng: -72.279656 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 477,
-    name: "57 Sachem Circle",
-    rent: 2568,
-    distance: 2.50,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.686848, lng: -72.296476 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 478,
-    name: "58 Sachem Circle",
-    rent: 2284,
-    distance: 5.44,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.735917, lng: -72.249246 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 479,
-    name: "59 Sachem Circle",
-    rent: 1867,
-    distance: 1.27,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.693959, lng: -72.316393 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 6,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 480,
-    name: "60 Sachem Circle",
-    rent: 1349,
-    distance: 3.11,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.668561, lng: -72.292726 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 481,
-    name: "61 Sachem Circle",
-    rent: 1413,
-    distance: 3.06,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1025,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.669654, lng: -72.307364 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 4,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 482,
-    name: "62 Sachem Circle",
-    rent: 2276,
-    distance: 3.86,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.711005, lng: -72.311856 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 2,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 483,
-    name: "63 Sachem Circle",
-    rent: 1077,
-    distance: 2.04,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.739406, lng: -72.300923 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 484,
-    name: "64 Sachem Circle",
-    rent: 1578,
-    distance: 4.88,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.689863, lng: -72.300721 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 10,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
-    }
-  },
-  {
-    id: 485,
-    name: "65 Sachem Circle",
-    rent: 1078,
-    distance: 2.01,
-    bedrooms: 2,
-    bathrooms: 1.0,
-    privateBathroom: false,
-    sqft: 1072,
-    amenities: ["Parking", "Laundry", "WiFi"],
-    coordinates: { lat: 43.711757, lng: -72.271877 },
-    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800",
-    neighborhood: "On Campus",
-    studentCount: 8,
-    atmosphere: "social",
-    nearbySchools: ["Dartmouth College"],
-    utilities: {
-      supermarkets: ["Dartmouth Co-op", "Hannaford"],
-      gyms: ["Dartmouth Gym", "Alumni Gym"],
-      restaurants: ["Collis Center", "Hop", "Novack Cafe"],
-      publicTransport: ["Dartmouth Shuttle", "Advance Transit"]
+    "id": 1,
+    "name": "Apartment 1",
+    "rent": 1500,
+    "distance": 2.39,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.667697,
+      "lng": -72.287554
+    },
+    "image": "https://images.unsplash.com/photo-1502672260267?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 19,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Apartment 2",
+    "rent": 1500,
+    "distance": 3.64,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.654346,
+      "lng": -72.25921
+    },
+    "image": "https://images.unsplash.com/photo-1502672260268?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 37,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Apartment 3",
+    "rent": 1500,
+    "distance": 1.45,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.712817,
+      "lng": -72.314619
+    },
+    "image": "https://images.unsplash.com/photo-1502672260269?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 35,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Apartment 4",
+    "rent": 1500,
+    "distance": 2.53,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.682058,
+      "lng": -72.247388
+    },
+    "image": "https://images.unsplash.com/photo-1502672260270?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 27,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Apartment 5",
+    "rent": 1500,
+    "distance": 1.52,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.70205,
+      "lng": -72.320117
+    },
+    "image": "https://images.unsplash.com/photo-1502672260271?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 19,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Apartment 6",
+    "rent": 1500,
+    "distance": 2.51,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.738338,
+      "lng": -72.284057
+    },
+    "image": "https://images.unsplash.com/photo-1502672260272?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 39,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Apartment 7",
+    "rent": 1500,
+    "distance": 1.27,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.698309,
+      "lng": -72.314371
+    },
+    "image": "https://images.unsplash.com/photo-1502672260273?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 19,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Apartment 8",
+    "rent": 1500,
+    "distance": 3.49,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.662408,
+      "lng": -72.332777
+    },
+    "image": "https://images.unsplash.com/photo-1502672260274?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 22,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Apartment 9",
+    "rent": 1500,
+    "distance": 0.87,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.692468,
+      "lng": -72.2786
+    },
+    "image": "https://images.unsplash.com/photo-1502672260275?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 39,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Apartment 10",
+    "rent": 1500,
+    "distance": 2.61,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.67062,
+      "lng": -72.318191
+    },
+    "image": "https://images.unsplash.com/photo-1502672260276?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 16,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Apartment 11",
+    "rent": 1500,
+    "distance": 1.38,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.718175,
+      "lng": -72.306051
+    },
+    "image": "https://images.unsplash.com/photo-1502672260277?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 32,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Apartment 12",
+    "rent": 1500,
+    "distance": 2.96,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.73176,
+      "lng": -72.246626
+    },
+    "image": "https://images.unsplash.com/photo-1502672260278?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 23,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "name": "Apartment 13",
+    "rent": 1500,
+    "distance": 1.09,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.714832,
+      "lng": -72.302747
+    },
+    "image": "https://images.unsplash.com/photo-1502672260279?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 31,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Apartment 14",
+    "rent": 1500,
+    "distance": 2.56,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.736315,
+      "lng": -72.309678
+    },
+    "image": "https://images.unsplash.com/photo-1502672260280?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 29,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Apartment 15",
+    "rent": 1500,
+    "distance": 1.95,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.674057,
+      "lng": -72.293458
+    },
+    "image": "https://images.unsplash.com/photo-1502672260281?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 20,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "Apartment 16",
+    "rent": 1500,
+    "distance": 0.98,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.694132,
+      "lng": -72.305806
+    },
+    "image": "https://images.unsplash.com/photo-1502672260282?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 15,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "Apartment 17",
+    "rent": 1500,
+    "distance": 2.01,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.689471,
+      "lng": -72.325886
+    },
+    "image": "https://images.unsplash.com/photo-1502672260283?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 22,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "Apartment 18",
+    "rent": 1500,
+    "distance": 1.87,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.724369,
+      "lng": -72.311001
+    },
+    "image": "https://images.unsplash.com/photo-1502672260284?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 22,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Apartment 19",
+    "rent": 1500,
+    "distance": 1.76,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.681168,
+      "lng": -72.269765
+    },
+    "image": "https://images.unsplash.com/photo-1502672260285?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 26,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Apartment 20",
+    "rent": 1500,
+    "distance": 3.16,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.657325,
+      "lng": -72.301874
+    },
+    "image": "https://images.unsplash.com/photo-1502672260286?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 36,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Apartment 21",
+    "rent": 1500,
+    "distance": 1.98,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.696045,
+      "lng": -72.328215
+    },
+    "image": "https://images.unsplash.com/photo-1502672260287?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 18,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Apartment 22",
+    "rent": 1500,
+    "distance": 1.51,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.69865,
+      "lng": -72.259796
+    },
+    "image": "https://images.unsplash.com/photo-1502672260288?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 17,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Apartment 23",
+    "rent": 1500,
+    "distance": 0.71,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.709403,
+      "lng": -72.27945
+    },
+    "image": "https://images.unsplash.com/photo-1502672260289?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 19,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "Apartment 24",
+    "rent": 1500,
+    "distance": 3.33,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.657722,
+      "lng": -72.315082
+    },
+    "image": "https://images.unsplash.com/photo-1502672260290?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 21,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "name": "Apartment 25",
+    "rent": 1500,
+    "distance": 3.63,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.74108,
+      "lng": -72.240699
+    },
+    "image": "https://images.unsplash.com/photo-1502672260291?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 21,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Apartment 26",
+    "rent": 1500,
+    "distance": 2.98,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.659612,
+      "lng": -72.298887
+    },
+    "image": "https://images.unsplash.com/photo-1502672260292?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 31,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Apartment 27",
+    "rent": 1500,
+    "distance": 3.14,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.731173,
+      "lng": -72.241173
+    },
+    "image": "https://images.unsplash.com/photo-1502672260293?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 34,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "name": "Apartment 28",
+    "rent": 1500,
+    "distance": 3.72,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.747554,
+      "lng": -72.249574
+    },
+    "image": "https://images.unsplash.com/photo-1502672260294?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 33,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "name": "Apartment 29",
+    "rent": 1500,
+    "distance": 4.07,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.653572,
+      "lng": -72.335546
+    },
+    "image": "https://images.unsplash.com/photo-1502672260295?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 11,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "name": "Apartment 30",
+    "rent": 1500,
+    "distance": 2.36,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.673549,
+      "lng": -72.31516
+    },
+    "image": "https://images.unsplash.com/photo-1502672260296?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 22,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "name": "Apartment 31",
+    "rent": 1500,
+    "distance": 2,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.730819,
+      "lng": -72.29505
+    },
+    "image": "https://images.unsplash.com/photo-1502672260297?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 38,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "name": "Apartment 32",
+    "rent": 1500,
+    "distance": 3.23,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.748083,
+      "lng": -72.30189
+    },
+    "image": "https://images.unsplash.com/photo-1502672260298?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 31,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "Apartment 33",
+    "rent": 1500,
+    "distance": 2.47,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.67221,
+      "lng": -72.316336
+    },
+    "image": "https://images.unsplash.com/photo-1502672260299?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 25,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "name": "Apartment 34",
+    "rent": 1500,
+    "distance": 1.32,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.699562,
+      "lng": -72.315786
+    },
+    "image": "https://images.unsplash.com/photo-1502672260300?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 18,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "Apartment 35",
+    "rent": 1500,
+    "distance": 3.38,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.667927,
+      "lng": -72.241466
+    },
+    "image": "https://images.unsplash.com/photo-1502672260301?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 26,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "name": "Apartment 36",
+    "rent": 1500,
+    "distance": 3.24,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.740822,
+      "lng": -72.252922
+    },
+    "image": "https://images.unsplash.com/photo-1502672260302?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 27,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "name": "Apartment 37",
+    "rent": 1500,
+    "distance": 2.38,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.728556,
+      "lng": -72.320303
+    },
+    "image": "https://images.unsplash.com/photo-1502672260303?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 18,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Apartment 38",
+    "rent": 1500,
+    "distance": 2.89,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.738777,
+      "lng": -72.261507
+    },
+    "image": "https://images.unsplash.com/photo-1502672260304?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 10,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "Apartment 39",
+    "rent": 1500,
+    "distance": 3.71,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.748716,
+      "lng": -72.252312
+    },
+    "image": "https://images.unsplash.com/photo-1502672260305?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 19,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "Apartment 40",
+    "rent": 1500,
+    "distance": 1.33,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.711547,
+      "lng": -72.26636
+    },
+    "image": "https://images.unsplash.com/photo-1502672260306?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 34,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "Apartment 41",
+    "rent": 1500,
+    "distance": 2.37,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "privateBathroom": true,
+    "sqft": 700,
+    "amenities": [
+      "WiFi",
+      "Heating",
+      "Parking",
+      "Private Bathroom"
+    ],
+    "coordinates": {
+      "lat": 43.72585,
+      "lng": -72.255205
+    },
+    "image": "https://images.unsplash.com/photo-1502672260307?w=800",
+    "neighborhood": "Hanover",
+    "studentCount": 21,
+    "atmosphere": "quiet",
+    "nearbySchools": [
+      "Dartmouth College"
+    ],
+    "utilities": {
+      "supermarkets": [
+        "Hannaford",
+        "Price Chopper"
+      ],
+      "gyms": [
+        "Dartmouth Gym",
+        "Alumni Gym"
+      ],
+      "restaurants": [
+        "Collis Center",
+        "Hop"
+      ],
+      "publicTransport": [
+        "Dartmouth Shuttle",
+        "Advance Transit"
+      ]
     }
   }
 ];
 
 export const trendData = [
   { month: "Jan", avgRent: 1150 },
-  { month: "Feb", avgRent: 1180 },
+  { month: "Feb", avgRent: 1175 },
   { month: "Mar", avgRent: 1200 },
-  { month: "Apr", avgRent: 1220 },
+  { month: "Apr", avgRent: 1225 },
   { month: "May", avgRent: 1280 },
   { month: "Jun", avgRent: 1350 },
   { month: "Jul", avgRent: 1400 },
@@ -11199,64 +1889,11 @@ export const trendData = [
 export const USD_TO_KRW = 1350;
 export const SQFT_TO_SQM = 0.092903;
 
-// Enhanced data for neighborhoods and utilities
 export const neighborhoods = [
-  {
-    name: "Hanover",
-    description: "Premium location closest to Dartmouth campus",
-    averageRent: 1967,
-    studentDensity: "very high",
-    atmosphere: "social"
-  },
-  {
-    name: "Norwich", 
-    description: "Quiet residential area with scenic views across the river",
-    averageRent: 1583,
-    studentDensity: "medium",
-    atmosphere: "quiet"
-  },
-  {
-    name: "Lebanon",
-    description: "Vibrant area with good mix of students and families",
-    averageRent: 1117,
-    studentDensity: "high",
-    atmosphere: "social"
-  },
-  {
-    name: "West Lebanon",
-    description: "Affordable suburban area with shopping centers",
-    averageRent: 1075,
-    studentDensity: "low",
-    atmosphere: "quiet"
-  },
-  {
-    name: "Wilder",
-    description: "Quiet residential village along the Connecticut River",
-    averageRent: 875,
-    studentDensity: "low",
-    atmosphere: "quiet"
-  },
-  {
-    name: "White River Junction",
-    description: "Historic rail town with affordable housing options",
-    averageRent: 917,
-    studentDensity: "low",
-    atmosphere: "mixed"
-  },
-  {
-    name: "On Campus",
-    description: "Dartmouth College housing and nearby properties",
-    averageRent: 1500,
-    studentDensity: "very high",
-    atmosphere: "social"
-  },
-  {
-    name: "Summit on Juniper",
-    description: "Upscale area with modern amenities",
-    averageRent: 1600,
-    studentDensity: "medium",
-    atmosphere: "mixed"
-  }
+  { name: "Hanover", description: "Premium location closest to Dartmouth campus", averageRent: 1967, studentDensity: "very high", atmosphere: "social" },
+  { name: "Lebanon", description: "Affordable and quiet residential area", averageRent: 1420, studentDensity: "medium", atmosphere: "quiet" },
+  { name: "Norwich", description: "Scenic Vermont town across the river", averageRent: 1685, studentDensity: "low", atmosphere: "quiet" },
+  { name: "West Lebanon", description: "Budget-friendly with shopping nearby", averageRent: 1238, studentDensity: "high", atmosphere: "mixed" }
 ];
 
 export const utilityLocations = [

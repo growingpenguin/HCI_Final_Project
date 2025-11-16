@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, GitCompare, Map, TrendingUp } from "lucide-react";
+import { Home, GitCompare, Map, TrendingUp, Upload } from "lucide-react";
 
 export function Navigation() {
   const location = useLocation();
@@ -8,7 +8,8 @@ export function Navigation() {
     { path: "/", label: "Home", icon: Home },
     { path: "/compare", label: "Compare", icon: GitCompare },
     { path: "/map", label: "Map View", icon: Map },
-    { path: "/trends", label: "Trends", icon: TrendingUp }
+    { path: "/trends", label: "Trends", icon: TrendingUp },
+    { path: "/upload", label: "Upload Data", icon: Upload }
   ];
 
   return (

@@ -4,6 +4,7 @@ import { HomePage } from "./components/HomePage";
 import { CompareListings } from "./components/CompareListings";
 import { MapView } from "./components/MapView";
 import { TrendsDashboard } from "./components/TrendsDashboard";
+import { ExcelUploader } from "./components/ExcelUploader";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/compare" element={<CompareListings />} />
           <Route path="/map" element={<MapView />} />
           <Route path="/trends" element={<TrendsDashboard />} />
+          <Route path="/upload" element={<ExcelUploader />} />
         </Routes>
       </div>
     </BrowserRouter>
