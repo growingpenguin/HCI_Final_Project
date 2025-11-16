@@ -1,6 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
-import { MapContainer, TileLayer, GeoJSON, Marker, Popup, Circle, useMap } from 'react-leaflet';
-import L, { Icon } from 'leaflet';
+import React, { useState, useEffect, useRef } from 'react';
+import { MapContainer, TileLayer, GeoJSON, Marker, Popup, Circle, useMap, useMapEvents } from 'react-leaflet';
+import L, { Icon, divIcon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.heat';
 import { apartments } from '../data/mockData';
@@ -149,8 +149,242 @@ const HeatmapLayer = ({ points }: HeatmapLayerProps) => {
   return null;
 };
 
+/**
+ * Haversine distance calculation (from Python clustering algorithm)
+ */
+function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 6371.0088;
+  const phi1 = (lat1 * Math.PI) / 180;
+  const phi2 = (lat2 * Math.PI) / 180;
+  const dphi = ((lat2 - lat1) * Math.PI) / 180;
+  const dlmb = ((lon2 - lon1) * Math.PI) / 180;
+  const a = Math.sin(dphi / 2) ** 2 + Math.cos(phi1) * Math.cos(phi2) * Math.sin(dlmb / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+/**
+ * Get color based on rent price
+ */
+function getRentColor(rent: number): string {
+  if (rent < 1000) return "#4ade80"; // green
+  if (rent < 1400) return "#fbbf24"; // yellow
+  return "#ef4444"; // red
+}
+
+/**
+ * Component that renders clusters when zoomed in
+ */
+interface ClusterLayerProps {
+  onApartmentClick: (id: number) => void;
+}
+
+const ClusterLayer = ({ onApartmentClick }: ClusterLayerProps) => {
+  const [zoom, setZoom] = useState(10);
+  
+  useMapEvents({
+    zoomend: (e) => {
+      setZoom(e.target.getZoom());
+    },
+  });
+
+  // Only show clusters when zoomed in
+  if (zoom < 14) {
+    return null;
+  }
+
+  // Region centers (from Python clustering algorithm)
+  const regions: {[key: string]: {lat: number, lng: number}} = {
+    "Dartmouth Green": { lat: 43.70350233799712, lng: -72.28856773185244 },
+    "Hanover": { lat: 43.716029, lng: -72.191760 },
+    "Norwich": { lat: 43.715347, lng: -72.307869 },
+    "Lebanon": { lat: 43.643283551443204, lng: -72.25430763407212 },
+    "West Lebanon": { lat: 43.644947536279126, lng: -72.31068784678496 },
+    "Wilder": { lat: 43.67283612983691, lng: -72.30867521809975 },
+    "White River Junction": { lat: 43.648962927850576, lng: -72.3192215986224 },
+    "Sachem Village": { lat: 43.683839091061536, lng: -72.28564634791711 },
+    "Summit on Juniper": { lat: 43.66988510472125, lng: -72.26251520301803 }
+  };
+
+  // Assign each apartment to nearest region
+  const clusters: {[key: string]: Array<typeof apartments[0]>} = {};
+  
+  apartments.forEach(apt => {
+    let nearestRegion = "";
+    let minDistance = Infinity;
+
+    // Find nearest region
+    for (const [regionName, regionCoord] of Object.entries(regions)) {
+      const dist = haversineKm(apt.coordinates.lat, apt.coordinates.lng, regionCoord.lat, regionCoord.lng);
+      if (dist < minDistance) {
+        minDistance = dist;
+        nearestRegion = regionName;
+      }
+    }
+
+    if (!clusters[nearestRegion]) {
+      clusters[nearestRegion] = [];
+    }
+    clusters[nearestRegion].push(apt);
+  });
+
+  return (
+    <>
+      {Object.entries(clusters).map(([regionName, apts]) => {
+        if (apts.length === 0) return null;
+
+        const regionCoord = regions[regionName];
+        const avgRent = apts.reduce((sum, apt) => sum + apt.rent, 0) / apts.length;
+        const clusterColor = getRentColor(avgRent);
+
+        if (apts.length > 1) {
+          // Cluster marker for multiple apartments
+          return (
+            <Marker
+              key={regionName}
+              position={[regionCoord.lat, regionCoord.lng]}
+              icon={divIcon({
+                className: 'cluster-marker',
+                html: `
+                  <div style="
+                    background: ${clusterColor};
+                    color: white;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    font-size: 16px;
+                    border: 3px solid white;
+                    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+                  ">${apts.length}</div>
+                `,
+                iconSize: [50, 50],
+                iconAnchor: [25, 25]
+              })}
+            >
+              <Popup maxHeight={300}>
+                <div className="p-3 max-w-md">
+                  <h3 className="font-bold text-lg mb-2">{regionName}</h3>
+                  <p className="text-sm text-gray-600 mb-2">{apts.length} listings • Avg: ${Math.round(avgRent)}/mo</p>
+                  <div className="space-y-2 max-h-60 overflow-y-auto">
+                    {apts.map((apt) => (
+                      <div 
+                        key={apt.id}
+                        className="flex items-center gap-2 p-2 bg-gray-50 rounded cursor-pointer hover:bg-gray-100 transition-colors"
+                        onClick={() => onApartmentClick(apt.id)}
+                      >
+                        <div className="w-8 h-8 bg-gray-200 rounded flex items-center justify-center">
+                          <span className="text-sm">🏠</span>
+                        </div>
+                        <div className="flex-1">
+                          <p className="font-medium text-sm">{apt.name}</p>
+                          <p className="text-xs text-gray-600">${apt.rent.toLocaleString()}/month</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Popup>
+            </Marker>
+          );
+        } else {
+          // Single apartment marker
+          const apt = apts[0];
+          return (
+            <Marker
+              key={apt.id}
+              position={[apt.coordinates.lat, apt.coordinates.lng]}
+              icon={divIcon({
+                className: 'single-marker',
+                html: `
+                  <div style="
+                    background: ${getRentColor(apt.rent)};
+                    color: white;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    border: 2px solid white;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+                  ">🏠</div>
+                `,
+                iconSize: [30, 30],
+                iconAnchor: [15, 15]
+              })}
+              eventHandlers={{
+                click: () => onApartmentClick(apt.id)
+              }}
+            >
+              <Popup>
+                <div className="p-3 max-w-xs">
+                  <h3 className="font-bold text-lg">{apt.name}</h3>
+                  <p className="text-sm text-gray-600">${apt.rent.toLocaleString()}/month</p>
+                  <p className="text-xs text-gray-500">{apt.bedrooms} bds • {apt.bathrooms} ba • {apt.sqft} sqft</p>
+                  <p className="text-xs text-gray-500">{apt.distance} miles from campus</p>
+                  <div className="mt-2">
+                    <span className="inline-block px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded">{apt.neighborhood}</span>
+                  </div>
+                </div>
+              </Popup>
+            </Marker>
+          );
+        }
+      })}
+    </>
+  );
+};
+
+/**
+ * Zoom indicator component - positioned at bottom-right
+ */
+const ZoomIndicator = () => {
+  const [zoom, setZoom] = useState(10);
+  
+  useMapEvents({
+    zoomend: (e) => {
+      setZoom(e.target.getZoom());
+    },
+  });
+
+  return (
+    <div className="leaflet-bottom leaflet-right" style={{ pointerEvents: 'none', position: 'absolute', bottom: '30px', right: '10px', zIndex: 1000 }}>
+      <div className="leaflet-control" style={{ pointerEvents: 'auto' }}>
+        <div className="bg-white px-3 py-2 rounded-lg shadow-md">
+          <div className="text-xs text-gray-600">
+            {zoom >= 14 ? (
+              <span className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                <span className="font-semibold">Cluster View</span>
+              </span>
+            ) : (
+              <span className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span className="font-semibold">Heatmap View</span>
+              </span>
+            )}
+            <div className="text-xs text-gray-500 mt-1">Zoom: {zoom}/18</div>
+            {zoom < 14 && (
+              <div className="text-xs text-gray-400 mt-1">Zoom in for clusters</div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Component to handle the georeferenced heatmap
-const RealGeoreferencedHeatmap = () => {
+interface RealGeoreferencedHeatmapProps {
+  hideMarkers?: boolean; // Control marker visibility based on zoom
+  onApartmentSelect?: (id: number) => void; // Callback to select apartment in parent
+}
+
+const RealGeoreferencedHeatmap = ({ hideMarkers = false, onApartmentSelect }: RealGeoreferencedHeatmapProps = {}) => {
   const [nhBoundary, setNhBoundary] = useState<any>(null);
   const [, setSelectedApartment] = useState<number | null>(null);
   const [heatmapData, setHeatmapData] = useState<[number, number, number][]>([]);
@@ -165,6 +399,14 @@ const RealGeoreferencedHeatmap = () => {
     { radius: 1609.34 * 30, color: '#4A5568', opacity: 0.06 }, // 30 miles
     { radius: 1609.34 * 40, color: '#4A5568', opacity: 0.05 }, // 40 miles
     { radius: 1609.34 * 50, color: '#4A5568', opacity: 0.04 }, // 50 miles
+  ];
+
+  // Small commute distance rings - EXACT same colors as Distance Rings section
+  const commuteRings = [
+    { radius: 805, color: '#3b82f6', label: '0.5 mi' },    // 0.5 miles - blue
+    { radius: 1609, color: '#eab308', label: '1.0 mi' },   // 1.0 miles - yellow
+    { radius: 2414, color: '#ef4444', label: '1.5 mi' },   // 1.5 miles - red
+    { radius: 3218, color: '#a855f7', label: '2.0 mi' }    // 2.0 miles - purple
   ];
 
   // Create custom blue pin icon for housing markers
@@ -367,16 +609,66 @@ const RealGeoreferencedHeatmap = () => {
           justifyContent: 'space-between', 
           fontSize: '11px',
           color: '#718096',
-          fontWeight: '500'
+          fontWeight: '500',
+          marginBottom: '16px',
+          paddingBottom: '16px',
+          borderBottom: '1px solid #e2e8f0'
         }}>
           <span>$850</span>
           <span>$1,800+</span>
         </div>
+
+        {/* Distance Rings Section */}
+        <div style={{ 
+          fontWeight: '600', 
+          marginBottom: '12px',
+          color: '#2d3748',
+          fontSize: '14px',
+          letterSpacing: '0.3px'
+        }}>
+          📍 Distance from Campus
+        </div>
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          gap: '8px',
+          fontSize: '11px'
+        }}>
+          {commuteRings.map((ring, index) => (
+            <div key={`legend-${index}`} style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <div style={{
+                width: '20px',
+                height: '20px',
+                borderRadius: '50%',
+                border: `3px dashed ${ring.color}`,
+                backgroundColor: ring.color,
+                opacity: 0.3,
+                flexShrink: 0
+              }} />
+              <span style={{
+                color: '#1a202c',
+                fontWeight: '600',
+                fontSize: '12px'
+              }}>
+                {ring.label} - {
+                  index === 0 ? 'Very Close' :
+                  index === 1 ? 'Walkable' :
+                  index === 2 ? 'Bikeable' :
+                  'Short Drive'
+                }
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
       
       <MapContainer 
-        center={[44.0, -71.5]} // Center of New Hampshire
-        zoom={7} 
+        center={[43.7022, -72.2896]} // Center on Dartmouth Green to see distance rings
+        zoom={12} // Zoom in to see the colorful commute rings clearly
         style={{ height: '600px', width: '100%' }}
       >
       <TileLayer
@@ -384,7 +676,7 @@ const RealGeoreferencedHeatmap = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       
-      {/* Distance Rings (Commute Distance Rings) */}
+      {/* Distance Rings (Large gray rings) */}
       {distanceRings.map((ring, index) => (
         <Circle
           key={`ring-${index}`}
@@ -398,6 +690,36 @@ const RealGeoreferencedHeatmap = () => {
             fillOpacity: ring.opacity * 0.5,
           }}
         />
+      ))}
+
+      {/* Commute Distance Rings (Small colorful rings - with white outline for visibility) */}
+      {commuteRings.map((ring, index) => (
+        <React.Fragment key={`commute-ring-${index}`}>
+          {/* White outline for contrast */}
+          <Circle
+            center={[hanoverCenter.lat, hanoverCenter.lng]}
+            radius={ring.radius}
+            pathOptions={{
+              color: '#FFFFFF',
+              weight: 5,
+              opacity: 1.0,
+              fillOpacity: 0,
+              dashArray: '10, 10',
+            }}
+          />
+          {/* Colored ring on top */}
+          <Circle
+            center={[hanoverCenter.lat, hanoverCenter.lng]}
+            radius={ring.radius}
+            pathOptions={{
+              color: ring.color,
+              weight: 3,
+              opacity: 1.0,
+              fillOpacity: 0,
+              dashArray: '10, 10',
+            }}
+          />
+        </React.Fragment>
       ))}
       
       {/* 히트맵 레이어 추가 */}
@@ -413,7 +735,7 @@ const RealGeoreferencedHeatmap = () => {
         />
       )}
       
-      {/* Housing Location Markers */}
+      {/* Housing Location Markers - Always visible */}
       {console.log("Rendering", apartments.length, "apartment markers")}
       {apartments.map((apartment) => (
         <Marker
@@ -439,6 +761,18 @@ const RealGeoreferencedHeatmap = () => {
           </Popup>
         </Marker>
       ))}
+
+      {/* Cluster layer - shows when zoom >= 14 (on top of individual markers) */}
+      <ClusterLayer onApartmentClick={(id) => {
+        setSelectedApartment(id);
+        // Also call parent callback if provided
+        if (onApartmentSelect) {
+          onApartmentSelect(id);
+        }
+      }} />
+      
+      {/* Zoom indicator - shows current mode */}
+      <ZoomIndicator />
     </MapContainer>
     </div>
   );

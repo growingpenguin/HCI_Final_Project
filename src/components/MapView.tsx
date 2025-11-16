@@ -16,6 +16,7 @@ declare global {
 export function MapView() {
   const [selectedApartment, setSelectedApartment] = useState<number | null>(null);
   const [currency, setCurrency] = useState<"USD" | "KRW">("USD");
+  const [selectedCategory, setSelectedCategory] = useState<{label: string, apartments: any[]} | null>(null);
 
   // New UI state for filters and interactions
   const [rentMax, setRentMax] = useState<number>(2000);
@@ -141,6 +142,7 @@ export function MapView() {
           // Add click handler to select apartment
           marker.on('click', () => {
             setSelectedApartment(apt.id);
+            setSelectedCategory(null); // Clear category selection when clicking a marker
           });
         });
         
@@ -836,6 +838,7 @@ export function MapView() {
             
             marker.on('click', () => {
               setSelectedApartment(apt.id);
+              setSelectedCategory(null); // Clear category selection when clicking a marker
             });
           }
         });
@@ -863,6 +866,7 @@ export function MapView() {
           
           marker.on('click', () => {
             setSelectedApartment(apt.id);
+            setSelectedCategory(null); // Clear category selection when clicking a marker
           });
         });
       }
@@ -1121,9 +1125,9 @@ export function MapView() {
         {/* Data Science Legend - FUNCTIONAL AND INFORMATIVE */}
         <div className="mb-4">
           <div className="bg-white rounded-lg shadow-sm border p-4">
-            <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between">
               <div className="text-sm font-semibold text-gray-800">
-                {visualizationMode === "price-bars" && "📊 Rent Analysis + Spatial Distribution"}
+                {visualizationMode === "price-bars" && "📊 Price Category Analysis by Average Distance"}
                 {visualizationMode === "location-popup" && "📍 Proximity Analysis"}
                 {visualizationMode === "neighborhood-clustering" && "🏘️ Neighborhood Analysis"}
               </div>
@@ -1134,21 +1138,21 @@ export function MapView() {
                       <div className="w-4 h-4 bg-[#4ade80] rounded-sm"></div>
                       <div className="text-xs">
                         <div className="font-medium text-gray-800">Close to Campus</div>
-                        <div className="text-gray-500">&lt; 0.5 miles</div>
+                        <div className="text-gray-500">Avg &lt; 0.5 miles</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 bg-[#fbbf24] rounded-sm"></div>
                       <div className="text-xs">
                         <div className="font-medium text-gray-800">Medium Distance</div>
-                        <div className="text-gray-500">0.5-1.0 miles</div>
+                        <div className="text-gray-500">Avg 0.5-1.0 miles</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2">
                       <div className="w-4 h-4 bg-[#ef4444] rounded-sm"></div>
                       <div className="text-xs">
                         <div className="font-medium text-gray-800">Far from Campus</div>
-                        <div className="text-gray-500">&gt; 1.0 miles</div>
+                        <div className="text-gray-500">Avg &gt; 1.0 miles</div>
                       </div>
                     </div>
                   </>
@@ -1222,7 +1226,7 @@ export function MapView() {
             {/* Data Insights */}
             <div className="mt-3 pt-3 border-t border-gray-100">
               <div className="text-xs text-gray-600">
-                {visualizationMode === "price-bars" && "💡 Insight: Bar chart shows rent distribution (Y-axis: rent amount, X-axis: apartments sorted by rent). Map shows spatial distribution (colors = distance from campus). Two complementary views - rent analysis + location analysis!"}
+                {visualizationMode === "price-bars" && "💡 Insight: Three bars show average rent for Low (<$1k), Medium ($1k-$1.4k), and High (>$1.4k) price categories. Bar colors indicate average distance from campus - closer apartments often cost more!"}
                 {visualizationMode === "location-popup" && "💡 Insight: Concentric rings show walking distance from Dartmouth campus - inner rings are more convenient"}
                 {visualizationMode === "neighborhood-clustering" && "💡 Insight: Click clusters to see neighborhood statistics and average rent data"}
               </div>
@@ -1238,9 +1242,10 @@ export function MapView() {
               <h3 className="text-xl font-bold mb-4 text-center">Rent Distribution Analysis</h3>
 
               {/* ---- COMPACT CHART WITH FIXED HEIGHT ---- */}
-              <div className="max-w-full mx-auto px-4">
+              <div className="max-w-full px-4">
                 {/* Chart area with fixed height */}
-                <div className="flex" style={{ marginRight: '220px' }}>
+                <div className="flex justify-center">
+                  <div className="flex flex-col">
                   <div className="flex gap-4 items-center">
                   {/* Y-axis labels - CORRECT ORDER: $2000 at top, $0 at bottom */}
                   <div className="w-12 flex-shrink-0 flex flex-col justify-between pr-2" style={{ height: '300px' }}>
@@ -1268,60 +1273,121 @@ export function MapView() {
                     {/* X axis at bottom */}
                     <div className="absolute left-0 right-0 bottom-0 h-[2px] bg-gray-800"></div>
 
-                    {/* Combined Bars and Labels Container */}
+                    {/* Bars Container - Using items-start like original */}
                     <div className="absolute left-0 right-0 top-0 h-full flex items-start justify-center px-4">
-                      <div className="flex items-start gap-6">
-                        {apartments
-                          .sort((a, b) => a.rent - b.rent)
-                          .map((apt) => {
+                      <div className="flex items-start gap-16">
+                        {(() => {
+                          // Categorize apartments by price
+                          const lowPriceApts = apartments.filter(apt => apt.rent < 1000);
+                          const mediumPriceApts = apartments.filter(apt => apt.rent >= 1000 && apt.rent <= 1400);
+                          const highPriceApts = apartments.filter(apt => apt.rent > 1400);
+
+                          // Calculate averages
+                          const categories = [
+                            {
+                              label: "Low",
+                              subLabel: "< $1,000",
+                              apartments: lowPriceApts,
+                              avgRent: lowPriceApts.length > 0 
+                                ? lowPriceApts.reduce((sum, apt) => sum + apt.rent, 0) / lowPriceApts.length 
+                                : 0,
+                              avgDistance: lowPriceApts.length > 0
+                                ? lowPriceApts.reduce((sum, apt) => sum + apt.distance, 0) / lowPriceApts.length
+                                : 0,
+                              count: lowPriceApts.length
+                            },
+                            {
+                              label: "Medium",
+                              subLabel: "$1,000-$1,400",
+                              apartments: mediumPriceApts,
+                              avgRent: mediumPriceApts.length > 0
+                                ? mediumPriceApts.reduce((sum, apt) => sum + apt.rent, 0) / mediumPriceApts.length
+                                : 0,
+                              avgDistance: mediumPriceApts.length > 0
+                                ? mediumPriceApts.reduce((sum, apt) => sum + apt.distance, 0) / mediumPriceApts.length
+                                : 0,
+                              count: mediumPriceApts.length
+                            },
+                            {
+                              label: "High",
+                              subLabel: "> $1,400",
+                              apartments: highPriceApts,
+                              avgRent: highPriceApts.length > 0
+                                ? highPriceApts.reduce((sum, apt) => sum + apt.rent, 0) / highPriceApts.length
+                                : 0,
+                              avgDistance: highPriceApts.length > 0
+                                ? highPriceApts.reduce((sum, apt) => sum + apt.distance, 0) / highPriceApts.length
+                                : 0,
+                              count: highPriceApts.length
+                            }
+                          ];
+
+                          // Sort by average distance (closest first)
+                          const sortedCategories = categories.sort((a, b) => a.avgDistance - b.avgDistance);
+
+                          return sortedCategories.map((category, index) => {
+                            if (category.count === 0) return null;
+
                             const maxRent = 2000;
-                            const barHeightPx = (apt.rent / maxRent) * 300;
-                            const color = getRentColor(apt.rent);
-                            const topPosition = 300 - barHeightPx;
-                    return (
+                            const barHeightPx = (category.avgRent / maxRent) * 300;
+                            const topPosition = 300 - barHeightPx; // Calculate position from top
+                            
+                            // Color based on average distance from campus
+                            const color = getDistanceColor(category.avgDistance);
+
+                            return (
                               <div
-                                key={`bar-wrapper-${apt.id}`}
+                                key={`bar-wrapper-${index}`}
                                 className="flex flex-col items-center"
                                 style={{
-                                  width: '60px',
-                                  flex: '0 0 60px'
+                                  width: '120px',
+                                  flex: '0 0 120px'
                                 }}
                               >
                                 {/* Bar */}
                                 <div
-                                  className="w-full rounded-t-sm transition-all hover:opacity-80 cursor-pointer"
+                                  className="w-full rounded-t-sm transition-all hover:opacity-80 cursor-pointer relative"
                                   style={{
                                     height: `${barHeightPx}px`,
                                     backgroundColor: color,
+                                    border: '2px solid rgba(0,0,0,0.1)',
                                     marginTop: `${topPosition}px`
                                   }}
-                                  onClick={() => setSelectedApartment(apt.id)}
-                                  title={`${apt.name}: $${apt.rent}`}
-                                />
+                                  onClick={() => {
+                                    console.log('Bar clicked!', category.label);
+                                    setSelectedCategory({
+                                      label: category.label,
+                                      apartments: category.apartments.sort((a, b) => a.rent - b.rent)
+                                    });
+                                  }}
+                                  title={`Click to see all ${category.count} listings`}
+                                >
+                                  {/* Average Rent Label inside bar */}
+                                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                    <div className="text-white font-bold text-lg drop-shadow-lg">
+                                      ${Math.round(category.avgRent)}
+                                    </div>
+                                  </div>
+                                </div>
                                 
-                                {/* Label - in same container as bar */}
-                                <div className="text-xs font-semibold text-gray-700 text-center leading-tight mt-2">
-                                  {apt.name.split(' ').length > 2 ? (
-                                    <>
-                                      {apt.name.split(' ')[0]} {apt.name.split(' ')[1]}
-                                      <br />
-                                      {apt.name.split(' ').slice(2).join(' ')}
-                                    </>
-                                  ) : apt.name.split(' ').length > 1 ? (
-                                    <>
-                                      {apt.name.split(' ')[0]}
-                                      <br />
-                                      {apt.name.split(' ')[1]}
-                                    </>
-                                  ) : (
-                                    apt.name
-                                  )}
+                                {/* Label - directly below bar in same wrapper (like original) */}
+                                <div className="text-center mt-2">
+                                  <div className="text-sm font-bold text-gray-800">{category.label}</div>
+                                  <div className="text-xs text-gray-600">{category.subLabel}</div>
+                                  <div className="text-xs text-gray-500 mt-1">
+                                    {category.count} listing{category.count !== 1 ? 's' : ''}
+                                  </div>
+                                  <div className="text-xs text-gray-500">
+                                    Avg: {category.avgDistance.toFixed(1)} mi
+                                  </div>
                                 </div>
                               </div>
-                    );
-                  })}
+                            );
+                          });
+                        })()}
                       </div>
                     </div>
+                  </div>
                   </div>
                   </div>
                 </div>
@@ -1329,18 +1395,23 @@ export function MapView() {
               </div>
 
               {/* Legend */}
-              <div className="flex justify-center gap-8 text-sm" style={{ marginTop: '22px' }}>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-green-500 rounded"></div>
-                  <span className="font-medium">Low (&lt; $1,000)</span>
+              <div className="mt-6 pt-4 border-t">
+                <div className="text-sm font-semibold text-gray-800 mb-3 text-center">
+                  Bar Colors Indicate Distance from Campus
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-yellow-500 rounded"></div>
-                  <span className="font-medium">Medium ($1,000-$1,400)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 bg-red-500 rounded"></div>
-                  <span className="font-medium">High (&gt; $1,400)</span>
+                <div className="flex justify-center gap-8 text-sm">
+                  <div className="flex items-center gap-2">
+                    <div className="w-4 h-4 bg-[#4ade80] rounded"></div>
+                    <span className="font-medium">Close (&lt; 0.5 mi)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-4 h-4 bg-[#fbbf24] rounded"></div>
+                    <span className="font-medium">Medium (0.5-1.0 mi)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-4 h-4 bg-[#ef4444] rounded"></div>
+                    <span className="font-medium">Far (&gt; 1.0 mi)</span>
+                  </div>
                 </div>
               </div>
             </Card>
@@ -1353,7 +1424,14 @@ export function MapView() {
             <Card className="p-6">
               {visualizationMode === "heatmap" ? (
                 <div className="relative bg-[#EAEAEA] rounded-lg overflow-hidden" style={{ height: "600px" }}>
-                  <RealGeoreferencedHeatmap />
+                  {/* Heatmap with markers visible - clusters will show when zoomed in */}
+                  <RealGeoreferencedHeatmap 
+                    hideMarkers={false} 
+                    onApartmentSelect={(id) => {
+                      setSelectedApartment(id);
+                      setSelectedCategory(null); // Clear any category selection
+                    }}
+                  />
                 </div>
               ) : (
                 <div className="relative bg-[#EAEAEA] rounded-lg overflow-hidden" style={{ height: "600px" }}>
@@ -1520,7 +1598,46 @@ export function MapView() {
           {/* Details Panel */}
           <div className="lg:col-span-1">
               <Card className="p-6">
-              {selected ? (
+              {selectedCategory ? (
+                <div>
+                  <h3 className="text-xl font-bold mb-2">{selectedCategory.label} Price Range</h3>
+                  <p className="text-sm text-gray-600 mb-4">
+                    {selectedCategory.apartments.length} listing{selectedCategory.apartments.length !== 1 ? 's' : ''}
+                  </p>
+                  
+                  <div className="space-y-3 max-h-[calc(100vh-300px)] overflow-y-auto">
+                    {selectedCategory.apartments.map(apt => (
+                      <div
+                        key={apt.id}
+                        className="p-4 border rounded-lg hover:bg-gray-50 cursor-pointer transition-colors"
+                        onClick={() => {
+                          setSelectedApartment(apt.id);
+                          setSelectedCategory(null);
+                        }}
+                      >
+                        <div className="font-semibold text-gray-800 mb-1">{apt.name}</div>
+                        <div className="text-sm text-gray-600">${apt.rent.toLocaleString()}/month</div>
+                        <div className="text-xs text-gray-500 mt-1">
+                          {apt.bedrooms} bed • {apt.bathrooms} bath • {apt.sqft} sqft
+                        </div>
+                        <div className="text-xs text-gray-500">{apt.distance} miles from campus</div>
+                        <div className="mt-2">
+                          <Badge variant="secondary" className="bg-[#EAEAEA] text-xs">
+                            {apt.neighborhood}
+                          </Badge>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <button
+                    onClick={() => setSelectedCategory(null)}
+                    className="mt-4 w-full px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg text-sm font-medium transition-colors"
+                  >
+                    Clear Selection
+                  </button>
+                </div>
+              ) : selected ? (
                 <div>
                   <div className="aspect-video rounded-lg overflow-hidden mb-4">
                     <img
