@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, GeoJSON, Marker, Popup, Circle, useMap, useMapEvents } from 'react-leaflet';
 import L, { Icon, divIcon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -401,6 +401,14 @@ const RealGeoreferencedHeatmap = ({ hideMarkers = false, onApartmentSelect }: Re
     { radius: 1609.34 * 50, color: '#4A5568', opacity: 0.04 }, // 50 miles
   ];
 
+  // Small commute distance rings - EXACT same colors as Distance Rings section
+  const commuteRings = [
+    { radius: 805, color: '#3b82f6', label: '0.5 mi' },    // 0.5 miles - blue
+    { radius: 1609, color: '#eab308', label: '1.0 mi' },   // 1.0 miles - yellow
+    { radius: 2414, color: '#ef4444', label: '1.5 mi' },   // 1.5 miles - red
+    { radius: 3218, color: '#a855f7', label: '2.0 mi' }    // 2.0 miles - purple
+  ];
+
   // Create custom blue pin icon for housing markers
   const housingIcon = new Icon({
     iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
@@ -601,16 +609,66 @@ const RealGeoreferencedHeatmap = ({ hideMarkers = false, onApartmentSelect }: Re
           justifyContent: 'space-between', 
           fontSize: '11px',
           color: '#718096',
-          fontWeight: '500'
+          fontWeight: '500',
+          marginBottom: '16px',
+          paddingBottom: '16px',
+          borderBottom: '1px solid #e2e8f0'
         }}>
           <span>$850</span>
           <span>$1,800+</span>
         </div>
+
+        {/* Distance Rings Section */}
+        <div style={{ 
+          fontWeight: '600', 
+          marginBottom: '12px',
+          color: '#2d3748',
+          fontSize: '14px',
+          letterSpacing: '0.3px'
+        }}>
+          📍 Distance from Campus
+        </div>
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          gap: '8px',
+          fontSize: '11px'
+        }}>
+          {commuteRings.map((ring, index) => (
+            <div key={`legend-${index}`} style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <div style={{
+                width: '20px',
+                height: '20px',
+                borderRadius: '50%',
+                border: `3px dashed ${ring.color}`,
+                backgroundColor: ring.color,
+                opacity: 0.3,
+                flexShrink: 0
+              }} />
+              <span style={{
+                color: '#1a202c',
+                fontWeight: '600',
+                fontSize: '12px'
+              }}>
+                {ring.label} - {
+                  index === 0 ? 'Very Close' :
+                  index === 1 ? 'Walkable' :
+                  index === 2 ? 'Bikeable' :
+                  'Short Drive'
+                }
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
       
       <MapContainer 
-        center={[44.0, -71.5]} // Center of New Hampshire
-        zoom={7} 
+        center={[43.7022, -72.2896]} // Center on Dartmouth Green to see distance rings
+        zoom={12} // Zoom in to see the colorful commute rings clearly
         style={{ height: '600px', width: '100%' }}
       >
       <TileLayer
@@ -618,7 +676,7 @@ const RealGeoreferencedHeatmap = ({ hideMarkers = false, onApartmentSelect }: Re
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
       
-      {/* Distance Rings (Commute Distance Rings) */}
+      {/* Distance Rings (Large gray rings) */}
       {distanceRings.map((ring, index) => (
         <Circle
           key={`ring-${index}`}
@@ -632,6 +690,36 @@ const RealGeoreferencedHeatmap = ({ hideMarkers = false, onApartmentSelect }: Re
             fillOpacity: ring.opacity * 0.5,
           }}
         />
+      ))}
+
+      {/* Commute Distance Rings (Small colorful rings - with white outline for visibility) */}
+      {commuteRings.map((ring, index) => (
+        <React.Fragment key={`commute-ring-${index}`}>
+          {/* White outline for contrast */}
+          <Circle
+            center={[hanoverCenter.lat, hanoverCenter.lng]}
+            radius={ring.radius}
+            pathOptions={{
+              color: '#FFFFFF',
+              weight: 5,
+              opacity: 1.0,
+              fillOpacity: 0,
+              dashArray: '10, 10',
+            }}
+          />
+          {/* Colored ring on top */}
+          <Circle
+            center={[hanoverCenter.lat, hanoverCenter.lng]}
+            radius={ring.radius}
+            pathOptions={{
+              color: ring.color,
+              weight: 3,
+              opacity: 1.0,
+              fillOpacity: 0,
+              dashArray: '10, 10',
+            }}
+          />
+        </React.Fragment>
       ))}
       
       {/* 히트맵 레이어 추가 */}
