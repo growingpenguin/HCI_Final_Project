@@ -340,6 +340,66 @@ const ClusterLayer = ({ onApartmentClick }: ClusterLayerProps) => {
 };
 
 /**
+ * Component that renders blue property markers based on zoom level
+ * Markers are visible when zoomed in (zoom >= 12), invisible when zoomed out
+ */
+interface ZoomBasedMarkersProps {
+  apartments: typeof apartments;
+  housingIcon: Icon;
+  onMarkerClick: (id: number) => void;
+}
+
+const ZoomBasedMarkers = ({ apartments, housingIcon, onMarkerClick }: ZoomBasedMarkersProps) => {
+  const map = useMap();
+  const [zoom, setZoom] = useState(() => map?.getZoom() ?? 10);
+  
+  useMapEvents({
+    zoomend: (e) => {
+      setZoom(e.target.getZoom());
+    },
+    zoom: (e) => {
+      setZoom(e.target.getZoom());
+    },
+  });
+
+  // Only show blue markers when zoomed in (zoom >= 12)
+  // This prevents clutter when viewing the full heatmap
+  // When zoomed out, only the heatmap colors are visible
+  if (zoom < 12) {
+    return null;
+  }
+
+  return (
+    <>
+      {apartments.map((apartment) => (
+        <Marker
+          key={apartment.id}
+          position={[apartment.coordinates.lat, apartment.coordinates.lng]}
+          icon={housingIcon}
+          eventHandlers={{
+            click: () => onMarkerClick(apartment.id)
+          }}
+        >
+          <Popup>
+            <div className="p-2">
+              <h3 className="font-bold text-sm">{apartment.name}</h3>
+              <p className="text-xs text-gray-600">${apartment.rent}/month</p>
+              <p className="text-xs text-gray-500">{apartment.distance} mi from campus</p>
+              <p className="text-xs text-gray-500">{apartment.bedrooms} bed, {apartment.bathrooms} bath</p>
+              <div className="mt-2">
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                  {apartment.neighborhood}
+                </span>
+              </div>
+            </div>
+          </Popup>
+        </Marker>
+      ))}
+    </>
+  );
+};
+
+/**
  * Zoom indicator component - positioned at bottom-right
  */
 const ZoomIndicator = () => {
@@ -735,32 +795,17 @@ const RealGeoreferencedHeatmap = ({ hideMarkers = false, onApartmentSelect }: Re
         />
       )}
       
-      {/* Housing Location Markers - Always visible */}
-      {console.log("Rendering", apartments.length, "apartment markers")}
-      {apartments.map((apartment) => (
-        <Marker
-          key={apartment.id}
-          position={[apartment.coordinates.lat, apartment.coordinates.lng]}
-          icon={housingIcon}
-          eventHandlers={{
-            click: () => setSelectedApartment(apartment.id)
-          }}
-        >
-          <Popup>
-            <div className="p-2">
-              <h3 className="font-bold text-sm">{apartment.name}</h3>
-              <p className="text-xs text-gray-600">${apartment.rent}/month</p>
-              <p className="text-xs text-gray-500">{apartment.distance} mi from campus</p>
-              <p className="text-xs text-gray-500">{apartment.bedrooms} bed, {apartment.bathrooms} bath</p>
-              <div className="mt-2">
-                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
-                  {apartment.neighborhood}
-                </span>
-              </div>
-            </div>
-          </Popup>
-        </Marker>
-      ))}
+      {/* Housing Location Markers - Visible only when zoomed in (zoom >= 12) */}
+      <ZoomBasedMarkers 
+        apartments={apartments}
+        housingIcon={housingIcon}
+        onMarkerClick={(id) => {
+          setSelectedApartment(id);
+          if (onApartmentSelect) {
+            onApartmentSelect(id);
+          }
+        }}
+      />
 
       {/* Cluster layer - shows when zoom >= 14 (on top of individual markers) */}
       <ClusterLayer onApartmentClick={(id) => {
